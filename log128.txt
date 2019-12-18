@@ -1,0 +1,1986 @@
+INFO:root:start with arguments Namespace(batch_size=128, benchmark=0, brightness=0, contrast=0, data_nthreads=4, data_train='data/cifar10_train.rec', data_train_idx='', data_val='data/cifar10_val.rec', data_val_idx='', disp_batches=20, dtype='float32', fill_value=127, gc_threshold=0.5, gc_type='none', gpus='0', image_shape='3,28,28', initializer='default', kv_store='device', load_epoch=None, loss='', lr=0.05, lr_factor=0.1, lr_step_epochs='200,250', macrobatch_size=0, max_crop_size=-1, max_random_area=1, max_random_aspect_ratio=0, max_random_h=0, max_random_l=0, max_random_rotate_angle=0, max_random_s=0, max_random_scale=1, max_random_shear_ratio=0, min_crop_size=-1, min_random_area=1, min_random_aspect_ratio=None, min_random_scale=1, model_prefix=None, mom=0.9, monitor=0, network='resnet', num_classes=10, num_epochs=1, num_examples=50000, num_layers=110, optimizer='sgd', pad_size=4, pca_noise=0, profile_server_suffix='', profile_worker_suffix='', random_crop=0, random_mirror=0, random_resized_crop=0, rgb_mean='123.68,116.779,103.939', rgb_std='1,1,1', saturation=0, save_period=1, test_io=0, top_k=0, warmup_epochs=5, warmup_strategy='linear', wd=0.0001)
+[18:39:29] src/io/iter_image_recordio_2.cc:172: ImageRecordIOParser2: data/cifar10_train.rec, use 2 threads for decoding..
+[18:39:32] src/io/iter_image_recordio_2.cc:172: ImageRecordIOParser2: data/cifar10_val.rec, use 2 threads for decoding..
+DEBUG:root:Bind time 5.012700796127319 secs
+DEBUG:root:Init param time 0.325864315032959 secs
+DEBUG:root:Init opt time 0.08188843727111816 secs
+DEBUG:root:Init metric time 0.0005202293395996094 secs
+[18:39:38] src/operator/nn/./cudnn/./cudnn_algoreg-inl.h:97: Running performance tests to find the best convolution algorithm, this can take a while... (setting env variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+DEBUG:root:Batch 0 compute time: 3.3073065280914307 secs
+DEBUG:root:Batch 0 update time: 0.3532280921936035 secs
+DEBUG:root:Batch 0 update metric time 0.004601955413818359 secs
+DEBUG:root:Batch 0 prepare time 0.00034165382385253906 secs
+DEBUG:root:End Batch callbacks time 0.00020241737365722656 secs
+DEBUG:root:Batch 1 compute time: 1.1780576705932617 secs
+DEBUG:root:Batch 1 update time: 0.12234640121459961 secs
+DEBUG:root:Batch 1 update metric time 0.002767801284790039 secs
+DEBUG:root:Batch 1 prepare time 0.00031256675720214844 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 2 compute time: 1.0781917572021484 secs
+DEBUG:root:Batch 2 update time: 0.11404848098754883 secs
+DEBUG:root:Batch 2 update metric time 0.002826213836669922 secs
+DEBUG:root:Batch 2 prepare time 0.0003151893615722656 secs
+DEBUG:root:End Batch callbacks time 0.00010752677917480469 secs
+DEBUG:root:Batch 3 compute time: 1.0877668857574463 secs
+DEBUG:root:Batch 3 update time: 0.11262941360473633 secs
+DEBUG:root:Batch 3 update metric time 0.0026214122772216797 secs
+DEBUG:root:Batch 3 prepare time 0.0005753040313720703 secs
+DEBUG:root:End Batch callbacks time 8.511543273925781e-05 secs
+DEBUG:root:Batch 4 compute time: 1.115025281906128 secs
+DEBUG:root:Batch 4 update time: 0.11441397666931152 secs
+DEBUG:root:Batch 4 update metric time 0.0027387142181396484 secs
+DEBUG:root:Batch 4 prepare time 0.0004532337188720703 secs
+DEBUG:root:End Batch callbacks time 0.00010132789611816406 secs
+DEBUG:root:Batch 5 compute time: 1.0964226722717285 secs
+DEBUG:root:Batch 5 update time: 0.11545085906982422 secs
+DEBUG:root:Batch 5 update metric time 0.00371551513671875 secs
+DEBUG:root:Batch 5 prepare time 0.0018951892852783203 secs
+DEBUG:root:End Batch callbacks time 0.0003123283386230469 secs
+DEBUG:root:Batch 6 compute time: 1.089932918548584 secs
+DEBUG:root:Batch 6 update time: 0.11518549919128418 secs
+DEBUG:root:Batch 6 update metric time 0.005853891372680664 secs
+DEBUG:root:Batch 6 prepare time 0.0020301342010498047 secs
+DEBUG:root:End Batch callbacks time 0.0003643035888671875 secs
+DEBUG:root:Batch 7 compute time: 1.078660488128662 secs
+DEBUG:root:Batch 7 update time: 0.1259446144104004 secs
+DEBUG:root:Batch 7 update metric time 0.002733945846557617 secs
+DEBUG:root:Batch 7 prepare time 0.0006768703460693359 secs
+DEBUG:root:End Batch callbacks time 8.845329284667969e-05 secs
+DEBUG:root:Batch 8 compute time: 1.1060142517089844 secs
+DEBUG:root:Batch 8 update time: 0.11918520927429199 secs
+DEBUG:root:Batch 8 update metric time 0.0027239322662353516 secs
+DEBUG:root:Batch 8 prepare time 0.0006771087646484375 secs
+DEBUG:root:End Batch callbacks time 9.202957153320312e-05 secs
+DEBUG:root:Batch 9 compute time: 1.0856006145477295 secs
+DEBUG:root:Batch 9 update time: 0.11661148071289062 secs
+DEBUG:root:Batch 9 update metric time 0.002804279327392578 secs
+DEBUG:root:Batch 9 prepare time 0.0006015300750732422 secs
+DEBUG:root:End Batch callbacks time 8.869171142578125e-05 secs
+DEBUG:root:Batch 10 compute time: 1.0837292671203613 secs
+DEBUG:root:Batch 10 update time: 0.11242532730102539 secs
+DEBUG:root:Batch 10 update metric time 0.0025641918182373047 secs
+DEBUG:root:Batch 10 prepare time 0.0005705356597900391 secs
+DEBUG:root:End Batch callbacks time 8.702278137207031e-05 secs
+DEBUG:root:Batch 11 compute time: 1.0867009162902832 secs
+DEBUG:root:Batch 11 update time: 0.11235189437866211 secs
+DEBUG:root:Batch 11 update metric time 0.0025238990783691406 secs
+DEBUG:root:Batch 11 prepare time 0.0005803108215332031 secs
+DEBUG:root:End Batch callbacks time 8.797645568847656e-05 secs
+DEBUG:root:Batch 12 compute time: 1.0935719013214111 secs
+DEBUG:root:Batch 12 update time: 0.11076092720031738 secs
+DEBUG:root:Batch 12 update metric time 0.002515554428100586 secs
+DEBUG:root:Batch 12 prepare time 0.0005731582641601562 secs
+DEBUG:root:End Batch callbacks time 8.678436279296875e-05 secs
+DEBUG:root:Batch 13 compute time: 1.083402395248413 secs
+DEBUG:root:Batch 13 update time: 0.12604475021362305 secs
+DEBUG:root:Batch 13 update metric time 0.0027964115142822266 secs
+DEBUG:root:Batch 13 prepare time 0.0005795955657958984 secs
+DEBUG:root:End Batch callbacks time 8.988380432128906e-05 secs
+DEBUG:root:Batch 14 compute time: 1.0977203845977783 secs
+DEBUG:root:Batch 14 update time: 0.11871886253356934 secs
+DEBUG:root:Batch 14 update metric time 0.002341747283935547 secs
+DEBUG:root:Batch 14 prepare time 0.0005617141723632812 secs
+DEBUG:root:End Batch callbacks time 9.417533874511719e-05 secs
+DEBUG:root:Batch 15 compute time: 1.1060919761657715 secs
+DEBUG:root:Batch 15 update time: 0.11589217185974121 secs
+DEBUG:root:Batch 15 update metric time 0.002727031707763672 secs
+DEBUG:root:Batch 15 prepare time 0.0006184577941894531 secs
+DEBUG:root:End Batch callbacks time 8.702278137207031e-05 secs
+DEBUG:root:Batch 16 compute time: 1.087620496749878 secs
+DEBUG:root:Batch 16 update time: 0.1114816665649414 secs
+DEBUG:root:Batch 16 update metric time 0.0026407241821289062 secs
+DEBUG:root:Batch 16 prepare time 0.0006887912750244141 secs
+DEBUG:root:End Batch callbacks time 9.679794311523438e-05 secs
+DEBUG:root:Batch 17 compute time: 1.0872688293457031 secs
+DEBUG:root:Batch 17 update time: 0.11219453811645508 secs
+DEBUG:root:Batch 17 update metric time 0.0027675628662109375 secs
+DEBUG:root:Batch 17 prepare time 0.00043010711669921875 secs
+DEBUG:root:End Batch callbacks time 9.369850158691406e-05 secs
+DEBUG:root:Batch 18 compute time: 1.1056973934173584 secs
+DEBUG:root:Batch 18 update time: 0.11331367492675781 secs
+DEBUG:root:Batch 18 update metric time 0.0025315284729003906 secs
+DEBUG:root:Batch 18 prepare time 0.0006687641143798828 secs
+DEBUG:root:End Batch callbacks time 8.96453857421875e-05 secs
+DEBUG:root:Batch 19 compute time: 1.067309856414795 secs
+DEBUG:root:Batch 19 update time: 0.11290836334228516 secs
+DEBUG:root:Batch 19 update metric time 0.0026810169219970703 secs
+DEBUG:root:Batch 19 prepare time 0.000583648681640625 secs
+DEBUG:root:End Batch callbacks time 8.702278137207031e-05 secs
+DEBUG:root:Batch 20 compute time: 1.074744462966919 secs
+DEBUG:root:Batch 20 update time: 0.11588406562805176 secs
+DEBUG:root:Batch 20 update metric time 0.002886533737182617 secs
+DEBUG:root:Batch 20 prepare time 0.0006122589111328125 secs
+INFO:root:Epoch[0] Batch [0-20]	Speed: 105.08 samples/sec	accuracy=0.156622
+DEBUG:root:End Batch callbacks time 0.0003871917724609375 secs
+DEBUG:root:Batch 21 compute time: 1.105032205581665 secs
+DEBUG:root:Batch 21 update time: 0.11563992500305176 secs
+DEBUG:root:Batch 21 update metric time 0.002757549285888672 secs
+DEBUG:root:Batch 21 prepare time 0.0006177425384521484 secs
+DEBUG:root:End Batch callbacks time 8.654594421386719e-05 secs
+DEBUG:root:Batch 22 compute time: 1.0878493785858154 secs
+DEBUG:root:Batch 22 update time: 0.1190946102142334 secs
+DEBUG:root:Batch 22 update metric time 0.002618551254272461 secs
+DEBUG:root:Batch 22 prepare time 0.0005757808685302734 secs
+DEBUG:root:End Batch callbacks time 8.821487426757812e-05 secs
+DEBUG:root:Batch 23 compute time: 1.1063401699066162 secs
+DEBUG:root:Batch 23 update time: 0.11342000961303711 secs
+DEBUG:root:Batch 23 update metric time 0.0025017261505126953 secs
+DEBUG:root:Batch 23 prepare time 0.0006012916564941406 secs
+DEBUG:root:End Batch callbacks time 8.845329284667969e-05 secs
+DEBUG:root:Batch 24 compute time: 1.0643599033355713 secs
+DEBUG:root:Batch 24 update time: 0.11736297607421875 secs
+DEBUG:root:Batch 24 update metric time 0.0026221275329589844 secs
+DEBUG:root:Batch 24 prepare time 0.0005991458892822266 secs
+DEBUG:root:End Batch callbacks time 0.00010180473327636719 secs
+DEBUG:root:Batch 25 compute time: 1.0657331943511963 secs
+DEBUG:root:Batch 25 update time: 0.11008739471435547 secs
+DEBUG:root:Batch 25 update metric time 0.002520322799682617 secs
+DEBUG:root:Batch 25 prepare time 0.0006487369537353516 secs
+DEBUG:root:End Batch callbacks time 8.702278137207031e-05 secs
+DEBUG:root:Batch 26 compute time: 1.0971565246582031 secs
+DEBUG:root:Batch 26 update time: 0.11022067070007324 secs
+DEBUG:root:Batch 26 update metric time 0.002404451370239258 secs
+DEBUG:root:Batch 26 prepare time 0.0005633831024169922 secs
+DEBUG:root:End Batch callbacks time 8.535385131835938e-05 secs
+DEBUG:root:Batch 27 compute time: 1.0902245044708252 secs
+DEBUG:root:Batch 27 update time: 0.10700654983520508 secs
+DEBUG:root:Batch 27 update metric time 0.0024459362030029297 secs
+DEBUG:root:Batch 27 prepare time 0.0006313323974609375 secs
+DEBUG:root:End Batch callbacks time 8.726119995117188e-05 secs
+DEBUG:root:Batch 28 compute time: 1.0971121788024902 secs
+DEBUG:root:Batch 28 update time: 0.11219382286071777 secs
+DEBUG:root:Batch 28 update metric time 0.002607583999633789 secs
+DEBUG:root:Batch 28 prepare time 0.0004673004150390625 secs
+DEBUG:root:End Batch callbacks time 8.726119995117188e-05 secs
+DEBUG:root:Batch 29 compute time: 1.0777032375335693 secs
+DEBUG:root:Batch 29 update time: 0.11361360549926758 secs
+DEBUG:root:Batch 29 update metric time 0.002665281295776367 secs
+DEBUG:root:Batch 29 prepare time 0.00048232078552246094 secs
+DEBUG:root:End Batch callbacks time 9.107589721679688e-05 secs
+DEBUG:root:Batch 30 compute time: 1.0808191299438477 secs
+DEBUG:root:Batch 30 update time: 0.10797405242919922 secs
+DEBUG:root:Batch 30 update metric time 0.002315521240234375 secs
+DEBUG:root:Batch 30 prepare time 0.00035858154296875 secs
+DEBUG:root:End Batch callbacks time 9.72747802734375e-05 secs
+DEBUG:root:Batch 31 compute time: 1.1074724197387695 secs
+DEBUG:root:Batch 31 update time: 0.11054086685180664 secs
+DEBUG:root:Batch 31 update metric time 0.0025222301483154297 secs
+DEBUG:root:Batch 31 prepare time 0.0005605220794677734 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 32 compute time: 1.1083712577819824 secs
+DEBUG:root:Batch 32 update time: 0.11876416206359863 secs
+DEBUG:root:Batch 32 update metric time 0.0025599002838134766 secs
+DEBUG:root:Batch 32 prepare time 0.0005691051483154297 secs
+DEBUG:root:End Batch callbacks time 9.036064147949219e-05 secs
+DEBUG:root:Batch 33 compute time: 1.0613734722137451 secs
+DEBUG:root:Batch 33 update time: 0.11272144317626953 secs
+DEBUG:root:Batch 33 update metric time 0.0030922889709472656 secs
+DEBUG:root:Batch 33 prepare time 0.000583648681640625 secs
+DEBUG:root:End Batch callbacks time 9.131431579589844e-05 secs
+DEBUG:root:Batch 34 compute time: 1.0839083194732666 secs
+DEBUG:root:Batch 34 update time: 0.11806821823120117 secs
+DEBUG:root:Batch 34 update metric time 0.0022776126861572266 secs
+DEBUG:root:Batch 34 prepare time 0.00048422813415527344 secs
+DEBUG:root:End Batch callbacks time 9.822845458984375e-05 secs
+DEBUG:root:Batch 35 compute time: 1.1039021015167236 secs
+DEBUG:root:Batch 35 update time: 0.11128377914428711 secs
+DEBUG:root:Batch 35 update metric time 0.002616405487060547 secs
+DEBUG:root:Batch 35 prepare time 0.0005908012390136719 secs
+DEBUG:root:End Batch callbacks time 8.487701416015625e-05 secs
+DEBUG:root:Batch 36 compute time: 1.0849261283874512 secs
+DEBUG:root:Batch 36 update time: 0.11078071594238281 secs
+DEBUG:root:Batch 36 update metric time 0.0025691986083984375 secs
+DEBUG:root:Batch 36 prepare time 0.0005614757537841797 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 37 compute time: 1.074941635131836 secs
+DEBUG:root:Batch 37 update time: 0.11708354949951172 secs
+DEBUG:root:Batch 37 update metric time 0.0026731491088867188 secs
+DEBUG:root:Batch 37 prepare time 0.0006110668182373047 secs
+DEBUG:root:End Batch callbacks time 8.869171142578125e-05 secs
+DEBUG:root:Batch 38 compute time: 1.1054339408874512 secs
+DEBUG:root:Batch 38 update time: 0.11429953575134277 secs
+DEBUG:root:Batch 38 update metric time 0.0026803016662597656 secs
+DEBUG:root:Batch 38 prepare time 0.0005927085876464844 secs
+DEBUG:root:End Batch callbacks time 8.797645568847656e-05 secs
+DEBUG:root:Batch 39 compute time: 1.0874242782592773 secs
+DEBUG:root:Batch 39 update time: 0.11259603500366211 secs
+DEBUG:root:Batch 39 update metric time 0.0025177001953125 secs
+DEBUG:root:Batch 39 prepare time 0.0005629062652587891 secs
+DEBUG:root:End Batch callbacks time 8.821487426757812e-05 secs
+DEBUG:root:Batch 40 compute time: 1.093250036239624 secs
+DEBUG:root:Batch 40 update time: 0.1139822006225586 secs
+DEBUG:root:Batch 40 update metric time 0.002543210983276367 secs
+DEBUG:root:Batch 40 prepare time 0.0005733966827392578 secs
+INFO:root:Epoch[0] Batch [20-40]	Speed: 105.86 samples/sec	accuracy=0.253516
+DEBUG:root:End Batch callbacks time 0.0003113746643066406 secs
+DEBUG:root:Batch 41 compute time: 1.1103541851043701 secs
+DEBUG:root:Batch 41 update time: 0.11861586570739746 secs
+DEBUG:root:Batch 41 update metric time 0.0023050308227539062 secs
+DEBUG:root:Batch 41 prepare time 0.0005104541778564453 secs
+DEBUG:root:End Batch callbacks time 8.96453857421875e-05 secs
+DEBUG:root:Batch 42 compute time: 1.081707239151001 secs
+DEBUG:root:Batch 42 update time: 0.11340188980102539 secs
+DEBUG:root:Batch 42 update metric time 0.0025637149810791016 secs
+DEBUG:root:Batch 42 prepare time 0.0005598068237304688 secs
+DEBUG:root:End Batch callbacks time 8.797645568847656e-05 secs
+DEBUG:root:Batch 43 compute time: 1.082427740097046 secs
+DEBUG:root:Batch 43 update time: 0.11272859573364258 secs
+DEBUG:root:Batch 43 update metric time 0.003123760223388672 secs
+DEBUG:root:Batch 43 prepare time 0.0006380081176757812 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 44 compute time: 1.0940840244293213 secs
+DEBUG:root:Batch 44 update time: 0.11381268501281738 secs
+DEBUG:root:Batch 44 update metric time 0.0028679370880126953 secs
+DEBUG:root:Batch 44 prepare time 0.0004451274871826172 secs
+DEBUG:root:End Batch callbacks time 8.702278137207031e-05 secs
+DEBUG:root:Batch 45 compute time: 1.0878450870513916 secs
+DEBUG:root:Batch 45 update time: 0.11082768440246582 secs
+DEBUG:root:Batch 45 update metric time 0.0024149417877197266 secs
+DEBUG:root:Batch 45 prepare time 0.0006825923919677734 secs
+DEBUG:root:End Batch callbacks time 0.00010371208190917969 secs
+DEBUG:root:Batch 46 compute time: 1.0898661613464355 secs
+DEBUG:root:Batch 46 update time: 0.11472415924072266 secs
+DEBUG:root:Batch 46 update metric time 0.0026640892028808594 secs
+DEBUG:root:Batch 46 prepare time 0.0006709098815917969 secs
+DEBUG:root:End Batch callbacks time 9.083747863769531e-05 secs
+DEBUG:root:Batch 47 compute time: 1.1001384258270264 secs
+DEBUG:root:Batch 47 update time: 0.12185049057006836 secs
+DEBUG:root:Batch 47 update metric time 0.0025110244750976562 secs
+DEBUG:root:Batch 47 prepare time 0.0006122589111328125 secs
+DEBUG:root:End Batch callbacks time 9.202957153320312e-05 secs
+DEBUG:root:Batch 48 compute time: 1.0831334590911865 secs
+DEBUG:root:Batch 48 update time: 0.11016416549682617 secs
+DEBUG:root:Batch 48 update metric time 0.0024194717407226562 secs
+DEBUG:root:Batch 48 prepare time 0.0006735324859619141 secs
+DEBUG:root:End Batch callbacks time 8.440017700195312e-05 secs
+DEBUG:root:Batch 49 compute time: 1.0920090675354004 secs
+DEBUG:root:Batch 49 update time: 0.1127176284790039 secs
+DEBUG:root:Batch 49 update metric time 0.0028162002563476562 secs
+DEBUG:root:Batch 49 prepare time 0.0007216930389404297 secs
+DEBUG:root:End Batch callbacks time 9.465217590332031e-05 secs
+DEBUG:root:Batch 50 compute time: 1.0925321578979492 secs
+DEBUG:root:Batch 50 update time: 0.11344790458679199 secs
+DEBUG:root:Batch 50 update metric time 0.002717733383178711 secs
+DEBUG:root:Batch 50 prepare time 0.0005948543548583984 secs
+DEBUG:root:End Batch callbacks time 9.107589721679688e-05 secs
+DEBUG:root:Batch 51 compute time: 1.099977731704712 secs
+DEBUG:root:Batch 51 update time: 0.12087178230285645 secs
+DEBUG:root:Batch 51 update metric time 0.0025310516357421875 secs
+DEBUG:root:Batch 51 prepare time 0.0006916522979736328 secs
+DEBUG:root:End Batch callbacks time 8.487701416015625e-05 secs
+DEBUG:root:Batch 52 compute time: 1.1006169319152832 secs
+DEBUG:root:Batch 52 update time: 0.1078486442565918 secs
+DEBUG:root:Batch 52 update metric time 0.0025360584259033203 secs
+DEBUG:root:Batch 52 prepare time 0.0005502700805664062 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 53 compute time: 1.0973563194274902 secs
+DEBUG:root:Batch 53 update time: 0.11755943298339844 secs
+DEBUG:root:Batch 53 update metric time 0.0025985240936279297 secs
+DEBUG:root:Batch 53 prepare time 0.0005841255187988281 secs
+DEBUG:root:End Batch callbacks time 8.940696716308594e-05 secs
+DEBUG:root:Batch 54 compute time: 1.0939419269561768 secs
+DEBUG:root:Batch 54 update time: 0.12954378128051758 secs
+DEBUG:root:Batch 54 update metric time 0.0027396678924560547 secs
+DEBUG:root:Batch 54 prepare time 0.0005736351013183594 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 55 compute time: 1.1096293926239014 secs
+DEBUG:root:Batch 55 update time: 0.12044715881347656 secs
+DEBUG:root:Batch 55 update metric time 0.002473115921020508 secs
+DEBUG:root:Batch 55 prepare time 0.00046634674072265625 secs
+DEBUG:root:End Batch callbacks time 8.702278137207031e-05 secs
+DEBUG:root:Batch 56 compute time: 1.0784175395965576 secs
+DEBUG:root:Batch 56 update time: 0.1135103702545166 secs
+DEBUG:root:Batch 56 update metric time 0.0026001930236816406 secs
+DEBUG:root:Batch 56 prepare time 0.0005815029144287109 secs
+DEBUG:root:End Batch callbacks time 8.797645568847656e-05 secs
+DEBUG:root:Batch 57 compute time: 1.086745262145996 secs
+DEBUG:root:Batch 57 update time: 0.11186838150024414 secs
+DEBUG:root:Batch 57 update metric time 0.0026319026947021484 secs
+DEBUG:root:Batch 57 prepare time 0.0004291534423828125 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 58 compute time: 1.0875234603881836 secs
+DEBUG:root:Batch 58 update time: 0.13110780715942383 secs
+DEBUG:root:Batch 58 update metric time 0.0025205612182617188 secs
+DEBUG:root:Batch 58 prepare time 0.0006616115570068359 secs
+DEBUG:root:End Batch callbacks time 9.107589721679688e-05 secs
+DEBUG:root:Batch 59 compute time: 1.1007435321807861 secs
+DEBUG:root:Batch 59 update time: 0.11268997192382812 secs
+DEBUG:root:Batch 59 update metric time 0.0025968551635742188 secs
+DEBUG:root:Batch 59 prepare time 0.0007078647613525391 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 60 compute time: 1.0858345031738281 secs
+DEBUG:root:Batch 60 update time: 0.10976409912109375 secs
+DEBUG:root:Batch 60 update metric time 0.002558469772338867 secs
+DEBUG:root:Batch 60 prepare time 0.0005586147308349609 secs
+INFO:root:Epoch[0] Batch [40-60]	Speed: 105.33 samples/sec	accuracy=0.313281
+DEBUG:root:End Batch callbacks time 0.0003597736358642578 secs
+DEBUG:root:Batch 61 compute time: 1.0987110137939453 secs
+DEBUG:root:Batch 61 update time: 0.1237633228302002 secs
+DEBUG:root:Batch 61 update metric time 0.002495288848876953 secs
+DEBUG:root:Batch 61 prepare time 0.0007073879241943359 secs
+DEBUG:root:End Batch callbacks time 9.179115295410156e-05 secs
+DEBUG:root:Batch 62 compute time: 1.1152381896972656 secs
+DEBUG:root:Batch 62 update time: 0.11795330047607422 secs
+DEBUG:root:Batch 62 update metric time 0.002445697784423828 secs
+DEBUG:root:Batch 62 prepare time 0.0005619525909423828 secs
+DEBUG:root:End Batch callbacks time 0.00016832351684570312 secs
+DEBUG:root:Batch 63 compute time: 1.1014044284820557 secs
+DEBUG:root:Batch 63 update time: 0.10866498947143555 secs
+DEBUG:root:Batch 63 update metric time 0.0025649070739746094 secs
+DEBUG:root:Batch 63 prepare time 0.0006685256958007812 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 64 compute time: 1.1087086200714111 secs
+DEBUG:root:Batch 64 update time: 0.1163637638092041 secs
+DEBUG:root:Batch 64 update metric time 0.0028731822967529297 secs
+DEBUG:root:Batch 64 prepare time 0.0006763935089111328 secs
+DEBUG:root:End Batch callbacks time 8.916854858398438e-05 secs
+DEBUG:root:Batch 65 compute time: 1.0021250247955322 secs
+DEBUG:root:Batch 65 update time: 0.11102628707885742 secs
+DEBUG:root:Batch 65 update metric time 0.0019140243530273438 secs
+DEBUG:root:Batch 65 prepare time 0.0004546642303466797 secs
+DEBUG:root:End Batch callbacks time 9.34600830078125e-05 secs
+DEBUG:root:Batch 66 compute time: 0.9884991645812988 secs
+DEBUG:root:Batch 66 update time: 0.11201786994934082 secs
+DEBUG:root:Batch 66 update metric time 0.0026445388793945312 secs
+DEBUG:root:Batch 66 prepare time 0.0005791187286376953 secs
+DEBUG:root:End Batch callbacks time 8.559226989746094e-05 secs
+DEBUG:root:Batch 67 compute time: 1.0582587718963623 secs
+DEBUG:root:Batch 67 update time: 0.11985301971435547 secs
+DEBUG:root:Batch 67 update metric time 0.0037679672241210938 secs
+DEBUG:root:Batch 67 prepare time 0.0006909370422363281 secs
+DEBUG:root:End Batch callbacks time 9.775161743164062e-05 secs
+DEBUG:root:Batch 68 compute time: 1.0477101802825928 secs
+DEBUG:root:Batch 68 update time: 0.1263265609741211 secs
+DEBUG:root:Batch 68 update metric time 0.0025985240936279297 secs
+DEBUG:root:Batch 68 prepare time 0.0005693435668945312 secs
+DEBUG:root:End Batch callbacks time 9.822845458984375e-05 secs
+DEBUG:root:Batch 69 compute time: 1.0813570022583008 secs
+DEBUG:root:Batch 69 update time: 0.11565637588500977 secs
+DEBUG:root:Batch 69 update metric time 0.0025565624237060547 secs
+DEBUG:root:Batch 69 prepare time 0.000560760498046875 secs
+DEBUG:root:End Batch callbacks time 8.654594421386719e-05 secs
+DEBUG:root:Batch 70 compute time: 1.0827112197875977 secs
+DEBUG:root:Batch 70 update time: 0.11375141143798828 secs
+DEBUG:root:Batch 70 update metric time 0.0019865036010742188 secs
+DEBUG:root:Batch 70 prepare time 0.00044417381286621094 secs
+DEBUG:root:End Batch callbacks time 8.487701416015625e-05 secs
+DEBUG:root:Batch 71 compute time: 1.0708768367767334 secs
+DEBUG:root:Batch 71 update time: 0.11237335205078125 secs
+DEBUG:root:Batch 71 update metric time 0.002836465835571289 secs
+DEBUG:root:Batch 71 prepare time 0.0005674362182617188 secs
+DEBUG:root:End Batch callbacks time 8.320808410644531e-05 secs
+DEBUG:root:Batch 72 compute time: 1.1009209156036377 secs
+DEBUG:root:Batch 72 update time: 0.1168208122253418 secs
+DEBUG:root:Batch 72 update metric time 0.002552032470703125 secs
+DEBUG:root:Batch 72 prepare time 0.0005581378936767578 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 73 compute time: 1.0884411334991455 secs
+DEBUG:root:Batch 73 update time: 0.1301720142364502 secs
+DEBUG:root:Batch 73 update metric time 0.0028526782989501953 secs
+DEBUG:root:Batch 73 prepare time 0.0005662441253662109 secs
+DEBUG:root:End Batch callbacks time 0.00016379356384277344 secs
+DEBUG:root:Batch 74 compute time: 1.0949463844299316 secs
+DEBUG:root:Batch 74 update time: 0.12144112586975098 secs
+DEBUG:root:Batch 74 update metric time 0.0026750564575195312 secs
+DEBUG:root:Batch 74 prepare time 0.0005557537078857422 secs
+DEBUG:root:End Batch callbacks time 9.1552734375e-05 secs
+DEBUG:root:Batch 75 compute time: 1.0932717323303223 secs
+DEBUG:root:Batch 75 update time: 0.11757302284240723 secs
+DEBUG:root:Batch 75 update metric time 0.0025191307067871094 secs
+DEBUG:root:Batch 75 prepare time 0.0006122589111328125 secs
+DEBUG:root:End Batch callbacks time 8.511543273925781e-05 secs
+DEBUG:root:Batch 76 compute time: 1.0797758102416992 secs
+DEBUG:root:Batch 76 update time: 0.12253022193908691 secs
+DEBUG:root:Batch 76 update metric time 0.0025544166564941406 secs
+DEBUG:root:Batch 76 prepare time 0.0005526542663574219 secs
+DEBUG:root:End Batch callbacks time 8.559226989746094e-05 secs
+DEBUG:root:Batch 77 compute time: 1.070265293121338 secs
+DEBUG:root:Batch 77 update time: 0.12166476249694824 secs
+DEBUG:root:Batch 77 update metric time 0.002392292022705078 secs
+DEBUG:root:Batch 77 prepare time 0.000553131103515625 secs
+DEBUG:root:End Batch callbacks time 8.440017700195312e-05 secs
+DEBUG:root:Batch 78 compute time: 1.0907042026519775 secs
+DEBUG:root:Batch 78 update time: 0.11516761779785156 secs
+DEBUG:root:Batch 78 update metric time 0.002530336380004883 secs
+DEBUG:root:Batch 78 prepare time 0.0005941390991210938 secs
+DEBUG:root:End Batch callbacks time 8.320808410644531e-05 secs
+DEBUG:root:Batch 79 compute time: 1.1200919151306152 secs
+DEBUG:root:Batch 79 update time: 0.11528873443603516 secs
+DEBUG:root:Batch 79 update metric time 0.0025827884674072266 secs
+DEBUG:root:Batch 79 prepare time 0.0005536079406738281 secs
+DEBUG:root:End Batch callbacks time 8.487701416015625e-05 secs
+DEBUG:root:Batch 80 compute time: 1.0802586078643799 secs
+DEBUG:root:Batch 80 update time: 0.11162686347961426 secs
+DEBUG:root:Batch 80 update metric time 0.0024919509887695312 secs
+DEBUG:root:Batch 80 prepare time 0.0005588531494140625 secs
+INFO:root:Epoch[0] Batch [60-80]	Speed: 106.41 samples/sec	accuracy=0.323047
+DEBUG:root:End Batch callbacks time 0.00031375885009765625 secs
+DEBUG:root:Batch 81 compute time: 1.078364610671997 secs
+DEBUG:root:Batch 81 update time: 0.12373828887939453 secs
+DEBUG:root:Batch 81 update metric time 0.0026483535766601562 secs
+DEBUG:root:Batch 81 prepare time 0.0005507469177246094 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 82 compute time: 1.0826857089996338 secs
+DEBUG:root:Batch 82 update time: 0.11271405220031738 secs
+DEBUG:root:Batch 82 update metric time 0.0025904178619384766 secs
+DEBUG:root:Batch 82 prepare time 0.0006322860717773438 secs
+DEBUG:root:End Batch callbacks time 8.368492126464844e-05 secs
+DEBUG:root:Batch 83 compute time: 1.0874288082122803 secs
+DEBUG:root:Batch 83 update time: 0.1131904125213623 secs
+DEBUG:root:Batch 83 update metric time 0.002782106399536133 secs
+DEBUG:root:Batch 83 prepare time 0.00042557716369628906 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 84 compute time: 1.103898525238037 secs
+DEBUG:root:Batch 84 update time: 0.11558341979980469 secs
+DEBUG:root:Batch 84 update metric time 0.002528667449951172 secs
+DEBUG:root:Batch 84 prepare time 0.0005247592926025391 secs
+DEBUG:root:End Batch callbacks time 8.440017700195312e-05 secs
+DEBUG:root:Batch 85 compute time: 1.0891609191894531 secs
+DEBUG:root:Batch 85 update time: 0.11258125305175781 secs
+DEBUG:root:Batch 85 update metric time 0.0025205612182617188 secs
+DEBUG:root:Batch 85 prepare time 0.0005562305450439453 secs
+DEBUG:root:End Batch callbacks time 8.511543273925781e-05 secs
+DEBUG:root:Batch 86 compute time: 1.054983377456665 secs
+DEBUG:root:Batch 86 update time: 0.11697793006896973 secs
+DEBUG:root:Batch 86 update metric time 0.0026204586029052734 secs
+DEBUG:root:Batch 86 prepare time 0.0006875991821289062 secs
+DEBUG:root:End Batch callbacks time 9.989738464355469e-05 secs
+DEBUG:root:Batch 87 compute time: 1.091688632965088 secs
+DEBUG:root:Batch 87 update time: 0.11539983749389648 secs
+DEBUG:root:Batch 87 update metric time 0.0026650428771972656 secs
+DEBUG:root:Batch 87 prepare time 0.0005638599395751953 secs
+DEBUG:root:End Batch callbacks time 8.678436279296875e-05 secs
+DEBUG:root:Batch 88 compute time: 1.092064619064331 secs
+DEBUG:root:Batch 88 update time: 0.12150049209594727 secs
+DEBUG:root:Batch 88 update metric time 0.0026051998138427734 secs
+DEBUG:root:Batch 88 prepare time 0.0005552768707275391 secs
+DEBUG:root:End Batch callbacks time 8.988380432128906e-05 secs
+DEBUG:root:Batch 89 compute time: 1.0648975372314453 secs
+DEBUG:root:Batch 89 update time: 0.11354327201843262 secs
+DEBUG:root:Batch 89 update metric time 0.002670764923095703 secs
+DEBUG:root:Batch 89 prepare time 0.0005626678466796875 secs
+DEBUG:root:End Batch callbacks time 0.0001583099365234375 secs
+DEBUG:root:Batch 90 compute time: 1.086686372756958 secs
+DEBUG:root:Batch 90 update time: 0.11581873893737793 secs
+DEBUG:root:Batch 90 update metric time 0.0026750564575195312 secs
+DEBUG:root:Batch 90 prepare time 0.0005993843078613281 secs
+DEBUG:root:End Batch callbacks time 8.344650268554688e-05 secs
+DEBUG:root:Batch 91 compute time: 1.0894749164581299 secs
+DEBUG:root:Batch 91 update time: 0.1161186695098877 secs
+DEBUG:root:Batch 91 update metric time 0.0026493072509765625 secs
+DEBUG:root:Batch 91 prepare time 0.0005719661712646484 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 92 compute time: 1.069751262664795 secs
+DEBUG:root:Batch 92 update time: 0.1135091781616211 secs
+DEBUG:root:Batch 92 update metric time 0.002763986587524414 secs
+DEBUG:root:Batch 92 prepare time 0.0006055831909179688 secs
+DEBUG:root:End Batch callbacks time 0.00010776519775390625 secs
+DEBUG:root:Batch 93 compute time: 1.077526330947876 secs
+DEBUG:root:Batch 93 update time: 0.11313009262084961 secs
+DEBUG:root:Batch 93 update metric time 0.0024924278259277344 secs
+DEBUG:root:Batch 93 prepare time 0.0005552768707275391 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 94 compute time: 1.1177659034729004 secs
+DEBUG:root:Batch 94 update time: 0.12456464767456055 secs
+DEBUG:root:Batch 94 update metric time 0.0025696754455566406 secs
+DEBUG:root:Batch 94 prepare time 0.0005655288696289062 secs
+DEBUG:root:End Batch callbacks time 8.511543273925781e-05 secs
+DEBUG:root:Batch 95 compute time: 1.0967719554901123 secs
+DEBUG:root:Batch 95 update time: 0.1106414794921875 secs
+DEBUG:root:Batch 95 update metric time 0.002801656723022461 secs
+DEBUG:root:Batch 95 prepare time 0.0005934238433837891 secs
+DEBUG:root:End Batch callbacks time 8.726119995117188e-05 secs
+DEBUG:root:Batch 96 compute time: 1.0967366695404053 secs
+DEBUG:root:Batch 96 update time: 0.11441493034362793 secs
+DEBUG:root:Batch 96 update metric time 0.0027112960815429688 secs
+DEBUG:root:Batch 96 prepare time 0.0004379749298095703 secs
+DEBUG:root:End Batch callbacks time 8.654594421386719e-05 secs
+DEBUG:root:Batch 97 compute time: 1.100292444229126 secs
+DEBUG:root:Batch 97 update time: 0.11528921127319336 secs
+DEBUG:root:Batch 97 update metric time 0.00266265869140625 secs
+DEBUG:root:Batch 97 prepare time 0.0006749629974365234 secs
+DEBUG:root:End Batch callbacks time 8.726119995117188e-05 secs
+DEBUG:root:Batch 98 compute time: 1.0792152881622314 secs
+DEBUG:root:Batch 98 update time: 0.11827278137207031 secs
+DEBUG:root:Batch 98 update metric time 0.0026540756225585938 secs
+DEBUG:root:Batch 98 prepare time 0.0006701946258544922 secs
+DEBUG:root:End Batch callbacks time 8.916854858398438e-05 secs
+DEBUG:root:Batch 99 compute time: 1.0838251113891602 secs
+DEBUG:root:Batch 99 update time: 0.11914205551147461 secs
+DEBUG:root:Batch 99 update metric time 0.0028820037841796875 secs
+DEBUG:root:Batch 99 prepare time 0.0005652904510498047 secs
+DEBUG:root:End Batch callbacks time 8.463859558105469e-05 secs
+DEBUG:root:Batch 100 compute time: 1.0944678783416748 secs
+DEBUG:root:Batch 100 update time: 0.11296224594116211 secs
+DEBUG:root:Batch 100 update metric time 0.0024743080139160156 secs
+DEBUG:root:Batch 100 prepare time 0.0006582736968994141 secs
+INFO:root:Epoch[0] Batch [80-100]	Speed: 105.82 samples/sec	accuracy=0.372266
+DEBUG:root:End Batch callbacks time 0.00036787986755371094 secs
+DEBUG:root:Batch 101 compute time: 1.0976283550262451 secs
+DEBUG:root:Batch 101 update time: 0.1132049560546875 secs
+DEBUG:root:Batch 101 update metric time 0.0028641223907470703 secs
+DEBUG:root:Batch 101 prepare time 0.0005767345428466797 secs
+DEBUG:root:End Batch callbacks time 8.678436279296875e-05 secs
+DEBUG:root:Batch 102 compute time: 1.0846614837646484 secs
+DEBUG:root:Batch 102 update time: 0.16268587112426758 secs
+DEBUG:root:Batch 102 update metric time 0.0025539398193359375 secs
+DEBUG:root:Batch 102 prepare time 0.0006506443023681641 secs
+DEBUG:root:End Batch callbacks time 8.869171142578125e-05 secs
+DEBUG:root:Batch 103 compute time: 1.083855390548706 secs
+DEBUG:root:Batch 103 update time: 0.10767221450805664 secs
+DEBUG:root:Batch 103 update metric time 0.0029993057250976562 secs
+DEBUG:root:Batch 103 prepare time 0.0005776882171630859 secs
+DEBUG:root:End Batch callbacks time 8.678436279296875e-05 secs
+DEBUG:root:Batch 104 compute time: 1.1036994457244873 secs
+DEBUG:root:Batch 104 update time: 0.11848998069763184 secs
+DEBUG:root:Batch 104 update metric time 0.0030202865600585938 secs
+DEBUG:root:Batch 104 prepare time 0.0006589889526367188 secs
+DEBUG:root:End Batch callbacks time 0.0001308917999267578 secs
+DEBUG:root:Batch 105 compute time: 1.086320400238037 secs
+DEBUG:root:Batch 105 update time: 0.11222553253173828 secs
+DEBUG:root:Batch 105 update metric time 0.002837657928466797 secs
+DEBUG:root:Batch 105 prepare time 0.0005774497985839844 secs
+DEBUG:root:End Batch callbacks time 8.916854858398438e-05 secs
+DEBUG:root:Batch 106 compute time: 1.0975708961486816 secs
+DEBUG:root:Batch 106 update time: 0.12190723419189453 secs
+DEBUG:root:Batch 106 update metric time 0.002482891082763672 secs
+DEBUG:root:Batch 106 prepare time 0.0006456375122070312 secs
+DEBUG:root:End Batch callbacks time 8.654594421386719e-05 secs
+DEBUG:root:Batch 107 compute time: 1.0831093788146973 secs
+DEBUG:root:Batch 107 update time: 0.11803579330444336 secs
+DEBUG:root:Batch 107 update metric time 0.0026590824127197266 secs
+DEBUG:root:Batch 107 prepare time 0.0006825923919677734 secs
+DEBUG:root:End Batch callbacks time 8.893013000488281e-05 secs
+DEBUG:root:Batch 108 compute time: 1.0983850955963135 secs
+DEBUG:root:Batch 108 update time: 0.11709809303283691 secs
+DEBUG:root:Batch 108 update metric time 0.0025484561920166016 secs
+DEBUG:root:Batch 108 prepare time 0.00060272216796875 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 109 compute time: 1.0957939624786377 secs
+DEBUG:root:Batch 109 update time: 0.11120843887329102 secs
+DEBUG:root:Batch 109 update metric time 0.0025551319122314453 secs
+DEBUG:root:Batch 109 prepare time 0.0006420612335205078 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 110 compute time: 1.1074888706207275 secs
+DEBUG:root:Batch 110 update time: 0.11286401748657227 secs
+DEBUG:root:Batch 110 update metric time 0.0026183128356933594 secs
+DEBUG:root:Batch 110 prepare time 0.0005662441253662109 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 111 compute time: 1.0924952030181885 secs
+DEBUG:root:Batch 111 update time: 0.112640380859375 secs
+DEBUG:root:Batch 111 update metric time 0.0026667118072509766 secs
+DEBUG:root:Batch 111 prepare time 0.0005598068237304688 secs
+DEBUG:root:End Batch callbacks time 8.726119995117188e-05 secs
+DEBUG:root:Batch 112 compute time: 1.1017956733703613 secs
+DEBUG:root:Batch 112 update time: 0.1109323501586914 secs
+DEBUG:root:Batch 112 update metric time 0.0026700496673583984 secs
+DEBUG:root:Batch 112 prepare time 0.0005669593811035156 secs
+DEBUG:root:End Batch callbacks time 8.7738037109375e-05 secs
+DEBUG:root:Batch 113 compute time: 1.1100947856903076 secs
+DEBUG:root:Batch 113 update time: 0.11766839027404785 secs
+DEBUG:root:Batch 113 update metric time 0.0025620460510253906 secs
+DEBUG:root:Batch 113 prepare time 0.0005376338958740234 secs
+DEBUG:root:End Batch callbacks time 8.487701416015625e-05 secs
+DEBUG:root:Batch 114 compute time: 1.0919699668884277 secs
+DEBUG:root:Batch 114 update time: 0.10903811454772949 secs
+DEBUG:root:Batch 114 update metric time 0.002835512161254883 secs
+DEBUG:root:Batch 114 prepare time 0.0004429817199707031 secs
+DEBUG:root:End Batch callbacks time 9.083747863769531e-05 secs
+DEBUG:root:Batch 115 compute time: 1.108034372329712 secs
+DEBUG:root:Batch 115 update time: 0.11909794807434082 secs
+DEBUG:root:Batch 115 update metric time 0.0025866031646728516 secs
+DEBUG:root:Batch 115 prepare time 0.0005958080291748047 secs
+DEBUG:root:End Batch callbacks time 8.893013000488281e-05 secs
+DEBUG:root:Batch 116 compute time: 1.0709638595581055 secs
+DEBUG:root:Batch 116 update time: 0.11647462844848633 secs
+DEBUG:root:Batch 116 update metric time 0.0024979114532470703 secs
+DEBUG:root:Batch 116 prepare time 0.0005733966827392578 secs
+DEBUG:root:End Batch callbacks time 8.440017700195312e-05 secs
+DEBUG:root:Batch 117 compute time: 1.085113525390625 secs
+DEBUG:root:Batch 117 update time: 0.14057040214538574 secs
+DEBUG:root:Batch 117 update metric time 0.0026111602783203125 secs
+DEBUG:root:Batch 117 prepare time 0.0005714893341064453 secs
+DEBUG:root:End Batch callbacks time 9.083747863769531e-05 secs
+DEBUG:root:Batch 118 compute time: 1.0886728763580322 secs
+DEBUG:root:Batch 118 update time: 0.11525630950927734 secs
+DEBUG:root:Batch 118 update metric time 0.002528667449951172 secs
+DEBUG:root:Batch 118 prepare time 0.0006334781646728516 secs
+DEBUG:root:End Batch callbacks time 9.250640869140625e-05 secs
+DEBUG:root:Batch 119 compute time: 1.1033971309661865 secs
+DEBUG:root:Batch 119 update time: 0.11127638816833496 secs
+DEBUG:root:Batch 119 update metric time 0.002838611602783203 secs
+DEBUG:root:Batch 119 prepare time 0.0005846023559570312 secs
+DEBUG:root:End Batch callbacks time 9.441375732421875e-05 secs
+DEBUG:root:Batch 120 compute time: 1.0659880638122559 secs
+DEBUG:root:Batch 120 update time: 0.11273479461669922 secs
+DEBUG:root:Batch 120 update metric time 0.002604246139526367 secs
+DEBUG:root:Batch 120 prepare time 0.0005750656127929688 secs
+INFO:root:Epoch[0] Batch [100-120]	Speed: 105.11 samples/sec	accuracy=0.372266
+DEBUG:root:End Batch callbacks time 0.000316619873046875 secs
+DEBUG:root:Batch 121 compute time: 1.100560188293457 secs
+DEBUG:root:Batch 121 update time: 0.11690640449523926 secs
+DEBUG:root:Batch 121 update metric time 0.0025708675384521484 secs
+DEBUG:root:Batch 121 prepare time 0.0005755424499511719 secs
+DEBUG:root:End Batch callbacks time 0.00017118453979492188 secs
+DEBUG:root:Batch 122 compute time: 1.0788965225219727 secs
+DEBUG:root:Batch 122 update time: 0.11346173286437988 secs
+DEBUG:root:Batch 122 update metric time 0.0024805068969726562 secs
+DEBUG:root:Batch 122 prepare time 0.0005955696105957031 secs
+DEBUG:root:End Batch callbacks time 8.7738037109375e-05 secs
+DEBUG:root:Batch 123 compute time: 1.097292184829712 secs
+DEBUG:root:Batch 123 update time: 0.11244750022888184 secs
+DEBUG:root:Batch 123 update metric time 0.0026102066040039062 secs
+DEBUG:root:Batch 123 prepare time 0.0005636215209960938 secs
+DEBUG:root:End Batch callbacks time 8.940696716308594e-05 secs
+DEBUG:root:Batch 124 compute time: 1.1054835319519043 secs
+DEBUG:root:Batch 124 update time: 0.11216306686401367 secs
+DEBUG:root:Batch 124 update metric time 0.0026361942291259766 secs
+DEBUG:root:Batch 124 prepare time 0.0005633831024169922 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 125 compute time: 1.0867764949798584 secs
+DEBUG:root:Batch 125 update time: 0.1116490364074707 secs
+DEBUG:root:Batch 125 update metric time 0.0025038719177246094 secs
+DEBUG:root:Batch 125 prepare time 0.0005545616149902344 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 126 compute time: 1.105766773223877 secs
+DEBUG:root:Batch 126 update time: 0.1107337474822998 secs
+DEBUG:root:Batch 126 update metric time 0.002528667449951172 secs
+DEBUG:root:Batch 126 prepare time 0.0005559921264648438 secs
+DEBUG:root:End Batch callbacks time 8.821487426757812e-05 secs
+DEBUG:root:Batch 127 compute time: 1.1075448989868164 secs
+DEBUG:root:Batch 127 update time: 0.11682701110839844 secs
+DEBUG:root:Batch 127 update metric time 0.0025742053985595703 secs
+DEBUG:root:Batch 127 prepare time 0.0006163120269775391 secs
+DEBUG:root:End Batch callbacks time 0.00011038780212402344 secs
+DEBUG:root:Batch 128 compute time: 1.0768985748291016 secs
+DEBUG:root:Batch 128 update time: 0.12068819999694824 secs
+DEBUG:root:Batch 128 update metric time 0.0033991336822509766 secs
+DEBUG:root:Batch 128 prepare time 0.0005707740783691406 secs
+DEBUG:root:End Batch callbacks time 8.96453857421875e-05 secs
+DEBUG:root:Batch 129 compute time: 1.0767056941986084 secs
+DEBUG:root:Batch 129 update time: 0.11401247978210449 secs
+DEBUG:root:Batch 129 update metric time 0.002785205841064453 secs
+DEBUG:root:Batch 129 prepare time 0.0004429817199707031 secs
+DEBUG:root:End Batch callbacks time 8.845329284667969e-05 secs
+DEBUG:root:Batch 130 compute time: 1.0843532085418701 secs
+DEBUG:root:Batch 130 update time: 0.11449790000915527 secs
+DEBUG:root:Batch 130 update metric time 0.002451181411743164 secs
+DEBUG:root:Batch 130 prepare time 0.0007357597351074219 secs
+DEBUG:root:End Batch callbacks time 8.821487426757812e-05 secs
+DEBUG:root:Batch 131 compute time: 1.056631088256836 secs
+DEBUG:root:Batch 131 update time: 0.12755560874938965 secs
+DEBUG:root:Batch 131 update metric time 0.002133607864379883 secs
+DEBUG:root:Batch 131 prepare time 0.00044918060302734375 secs
+DEBUG:root:End Batch callbacks time 8.296966552734375e-05 secs
+DEBUG:root:Batch 132 compute time: 1.1056084632873535 secs
+DEBUG:root:Batch 132 update time: 0.1239619255065918 secs
+DEBUG:root:Batch 132 update metric time 0.0019097328186035156 secs
+DEBUG:root:Batch 132 prepare time 0.00043129920959472656 secs
+DEBUG:root:End Batch callbacks time 9.5367431640625e-05 secs
+DEBUG:root:Batch 133 compute time: 1.072988748550415 secs
+DEBUG:root:Batch 133 update time: 0.11521291732788086 secs
+DEBUG:root:Batch 133 update metric time 0.002490997314453125 secs
+DEBUG:root:Batch 133 prepare time 0.0005614757537841797 secs
+DEBUG:root:End Batch callbacks time 8.96453857421875e-05 secs
+DEBUG:root:Batch 134 compute time: 1.0806801319122314 secs
+DEBUG:root:Batch 134 update time: 0.13408875465393066 secs
+DEBUG:root:Batch 134 update metric time 0.0025894641876220703 secs
+DEBUG:root:Batch 134 prepare time 0.0004487037658691406 secs
+DEBUG:root:End Batch callbacks time 8.988380432128906e-05 secs
+DEBUG:root:Batch 135 compute time: 1.0982170104980469 secs
+DEBUG:root:Batch 135 update time: 0.11385130882263184 secs
+DEBUG:root:Batch 135 update metric time 0.0025408267974853516 secs
+DEBUG:root:Batch 135 prepare time 0.0006492137908935547 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 136 compute time: 1.0967445373535156 secs
+DEBUG:root:Batch 136 update time: 0.11235237121582031 secs
+DEBUG:root:Batch 136 update metric time 0.0025169849395751953 secs
+DEBUG:root:Batch 136 prepare time 0.0005652904510498047 secs
+DEBUG:root:End Batch callbacks time 8.702278137207031e-05 secs
+DEBUG:root:Batch 137 compute time: 1.1122229099273682 secs
+DEBUG:root:Batch 137 update time: 0.11117076873779297 secs
+DEBUG:root:Batch 137 update metric time 0.0027201175689697266 secs
+DEBUG:root:Batch 137 prepare time 0.0005686283111572266 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 138 compute time: 1.0739424228668213 secs
+DEBUG:root:Batch 138 update time: 0.11523914337158203 secs
+DEBUG:root:Batch 138 update metric time 0.002650022506713867 secs
+DEBUG:root:Batch 138 prepare time 0.0005545616149902344 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 139 compute time: 1.075707197189331 secs
+DEBUG:root:Batch 139 update time: 0.12396383285522461 secs
+DEBUG:root:Batch 139 update metric time 0.002585172653198242 secs
+DEBUG:root:Batch 139 prepare time 0.0005486011505126953 secs
+DEBUG:root:End Batch callbacks time 0.00019073486328125 secs
+DEBUG:root:Batch 140 compute time: 1.0845961570739746 secs
+DEBUG:root:Batch 140 update time: 0.11391115188598633 secs
+DEBUG:root:Batch 140 update metric time 0.002476930618286133 secs
+DEBUG:root:Batch 140 prepare time 0.0005714893341064453 secs
+INFO:root:Epoch[0] Batch [120-140]	Speed: 105.59 samples/sec	accuracy=0.405859
+DEBUG:root:End Batch callbacks time 0.0003135204315185547 secs
+DEBUG:root:Batch 141 compute time: 1.0866217613220215 secs
+DEBUG:root:Batch 141 update time: 0.11117219924926758 secs
+DEBUG:root:Batch 141 update metric time 0.0025827884674072266 secs
+DEBUG:root:Batch 141 prepare time 0.0005662441253662109 secs
+DEBUG:root:End Batch callbacks time 8.845329284667969e-05 secs
+DEBUG:root:Batch 142 compute time: 1.1023061275482178 secs
+DEBUG:root:Batch 142 update time: 0.11529231071472168 secs
+DEBUG:root:Batch 142 update metric time 0.0026171207427978516 secs
+DEBUG:root:Batch 142 prepare time 0.0005638599395751953 secs
+DEBUG:root:End Batch callbacks time 8.702278137207031e-05 secs
+DEBUG:root:Batch 143 compute time: 1.071972370147705 secs
+DEBUG:root:Batch 143 update time: 0.11305427551269531 secs
+DEBUG:root:Batch 143 update metric time 0.002656698226928711 secs
+DEBUG:root:Batch 143 prepare time 0.0004150867462158203 secs
+DEBUG:root:End Batch callbacks time 8.869171142578125e-05 secs
+DEBUG:root:Batch 144 compute time: 1.0979030132293701 secs
+DEBUG:root:Batch 144 update time: 0.11011290550231934 secs
+DEBUG:root:Batch 144 update metric time 0.0025610923767089844 secs
+DEBUG:root:Batch 144 prepare time 0.0006430149078369141 secs
+DEBUG:root:End Batch callbacks time 9.250640869140625e-05 secs
+DEBUG:root:Batch 145 compute time: 1.0830872058868408 secs
+DEBUG:root:Batch 145 update time: 0.11264204978942871 secs
+DEBUG:root:Batch 145 update metric time 0.0025751590728759766 secs
+DEBUG:root:Batch 145 prepare time 0.0005600452423095703 secs
+DEBUG:root:End Batch callbacks time 8.893013000488281e-05 secs
+DEBUG:root:Batch 146 compute time: 1.0529937744140625 secs
+DEBUG:root:Batch 146 update time: 0.11034965515136719 secs
+DEBUG:root:Batch 146 update metric time 0.002614259719848633 secs
+DEBUG:root:Batch 146 prepare time 0.0015916824340820312 secs
+DEBUG:root:End Batch callbacks time 0.00033402442932128906 secs
+DEBUG:root:Batch 147 compute time: 1.074538230895996 secs
+DEBUG:root:Batch 147 update time: 0.11221694946289062 secs
+DEBUG:root:Batch 147 update metric time 0.0027489662170410156 secs
+DEBUG:root:Batch 147 prepare time 0.0006103515625 secs
+DEBUG:root:End Batch callbacks time 0.00010204315185546875 secs
+DEBUG:root:Batch 148 compute time: 1.078150987625122 secs
+DEBUG:root:Batch 148 update time: 0.11357784271240234 secs
+DEBUG:root:Batch 148 update metric time 0.00272369384765625 secs
+DEBUG:root:Batch 148 prepare time 0.0006651878356933594 secs
+DEBUG:root:End Batch callbacks time 8.893013000488281e-05 secs
+DEBUG:root:Batch 149 compute time: 1.072878122329712 secs
+DEBUG:root:Batch 149 update time: 0.11155462265014648 secs
+DEBUG:root:Batch 149 update metric time 0.0025916099548339844 secs
+DEBUG:root:Batch 149 prepare time 0.0005710124969482422 secs
+DEBUG:root:End Batch callbacks time 8.654594421386719e-05 secs
+DEBUG:root:Batch 150 compute time: 1.0938982963562012 secs
+DEBUG:root:Batch 150 update time: 0.11291718482971191 secs
+DEBUG:root:Batch 150 update metric time 0.0027730464935302734 secs
+DEBUG:root:Batch 150 prepare time 0.0006399154663085938 secs
+DEBUG:root:End Batch callbacks time 9.560585021972656e-05 secs
+DEBUG:root:Batch 151 compute time: 1.0794854164123535 secs
+DEBUG:root:Batch 151 update time: 0.1325969696044922 secs
+DEBUG:root:Batch 151 update metric time 0.0025708675384521484 secs
+DEBUG:root:Batch 151 prepare time 0.0006303787231445312 secs
+DEBUG:root:End Batch callbacks time 9.012222290039062e-05 secs
+DEBUG:root:Batch 152 compute time: 1.0638611316680908 secs
+DEBUG:root:Batch 152 update time: 0.11482071876525879 secs
+DEBUG:root:Batch 152 update metric time 0.002628326416015625 secs
+DEBUG:root:Batch 152 prepare time 0.0004508495330810547 secs
+DEBUG:root:End Batch callbacks time 8.940696716308594e-05 secs
+DEBUG:root:Batch 153 compute time: 1.080033540725708 secs
+DEBUG:root:Batch 153 update time: 0.11325311660766602 secs
+DEBUG:root:Batch 153 update metric time 0.0028913021087646484 secs
+DEBUG:root:Batch 153 prepare time 0.0005977153778076172 secs
+DEBUG:root:End Batch callbacks time 8.726119995117188e-05 secs
+DEBUG:root:Batch 154 compute time: 1.1030783653259277 secs
+DEBUG:root:Batch 154 update time: 0.11186695098876953 secs
+DEBUG:root:Batch 154 update metric time 0.002698183059692383 secs
+DEBUG:root:Batch 154 prepare time 0.000576019287109375 secs
+DEBUG:root:End Batch callbacks time 8.535385131835938e-05 secs
+DEBUG:root:Batch 155 compute time: 1.111482858657837 secs
+DEBUG:root:Batch 155 update time: 0.11727213859558105 secs
+DEBUG:root:Batch 155 update metric time 0.004760265350341797 secs
+DEBUG:root:Batch 155 prepare time 0.0005700588226318359 secs
+DEBUG:root:End Batch callbacks time 8.511543273925781e-05 secs
+DEBUG:root:Batch 156 compute time: 1.1213171482086182 secs
+DEBUG:root:Batch 156 update time: 0.11393141746520996 secs
+DEBUG:root:Batch 156 update metric time 0.0027599334716796875 secs
+DEBUG:root:Batch 156 prepare time 0.0005714893341064453 secs
+DEBUG:root:End Batch callbacks time 9.059906005859375e-05 secs
+DEBUG:root:Batch 157 compute time: 1.0574045181274414 secs
+DEBUG:root:Batch 157 update time: 0.12494969367980957 secs
+DEBUG:root:Batch 157 update metric time 0.002107858657836914 secs
+DEBUG:root:Batch 157 prepare time 0.0004477500915527344 secs
+DEBUG:root:End Batch callbacks time 0.00017404556274414062 secs
+DEBUG:root:Batch 158 compute time: 1.0694377422332764 secs
+DEBUG:root:Batch 158 update time: 0.11496710777282715 secs
+DEBUG:root:Batch 158 update metric time 0.0023415088653564453 secs
+DEBUG:root:Batch 158 prepare time 0.00037407875061035156 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 159 compute time: 1.0723156929016113 secs
+DEBUG:root:Batch 159 update time: 0.11467719078063965 secs
+DEBUG:root:Batch 159 update metric time 0.0027549266815185547 secs
+DEBUG:root:Batch 159 prepare time 0.0007562637329101562 secs
+DEBUG:root:End Batch callbacks time 9.870529174804688e-05 secs
+DEBUG:root:Batch 160 compute time: 1.0922205448150635 secs
+DEBUG:root:Batch 160 update time: 0.12258172035217285 secs
+DEBUG:root:Batch 160 update metric time 0.0026738643646240234 secs
+DEBUG:root:Batch 160 prepare time 0.0005674362182617188 secs
+INFO:root:Epoch[0] Batch [140-160]	Speed: 106.19 samples/sec	accuracy=0.420312
+DEBUG:root:End Batch callbacks time 0.0003209114074707031 secs
+DEBUG:root:Batch 161 compute time: 1.1043741703033447 secs
+DEBUG:root:Batch 161 update time: 0.11308431625366211 secs
+DEBUG:root:Batch 161 update metric time 0.0025784969329833984 secs
+DEBUG:root:Batch 161 prepare time 0.0005514621734619141 secs
+DEBUG:root:End Batch callbacks time 8.916854858398438e-05 secs
+DEBUG:root:Batch 162 compute time: 1.088611125946045 secs
+DEBUG:root:Batch 162 update time: 0.1138467788696289 secs
+DEBUG:root:Batch 162 update metric time 0.0025856494903564453 secs
+DEBUG:root:Batch 162 prepare time 0.0005631446838378906 secs
+DEBUG:root:End Batch callbacks time 8.487701416015625e-05 secs
+DEBUG:root:Batch 163 compute time: 1.072556495666504 secs
+DEBUG:root:Batch 163 update time: 0.11266231536865234 secs
+DEBUG:root:Batch 163 update metric time 0.0027146339416503906 secs
+DEBUG:root:Batch 163 prepare time 0.0005581378936767578 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 164 compute time: 1.0848078727722168 secs
+DEBUG:root:Batch 164 update time: 0.11147665977478027 secs
+DEBUG:root:Batch 164 update metric time 0.002670764923095703 secs
+DEBUG:root:Batch 164 prepare time 0.0005528926849365234 secs
+DEBUG:root:End Batch callbacks time 8.678436279296875e-05 secs
+DEBUG:root:Batch 165 compute time: 1.10252046585083 secs
+DEBUG:root:Batch 165 update time: 0.12225842475891113 secs
+DEBUG:root:Batch 165 update metric time 0.0025467872619628906 secs
+DEBUG:root:Batch 165 prepare time 0.0005953311920166016 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 166 compute time: 1.0192008018493652 secs
+DEBUG:root:Batch 166 update time: 0.11211156845092773 secs
+DEBUG:root:Batch 166 update metric time 0.0023827552795410156 secs
+DEBUG:root:Batch 166 prepare time 0.0007040500640869141 secs
+DEBUG:root:End Batch callbacks time 0.00010037422180175781 secs
+DEBUG:root:Batch 167 compute time: 1.0417451858520508 secs
+DEBUG:root:Batch 167 update time: 0.10634970664978027 secs
+DEBUG:root:Batch 167 update metric time 0.0027277469635009766 secs
+DEBUG:root:Batch 167 prepare time 0.0005242824554443359 secs
+DEBUG:root:End Batch callbacks time 9.298324584960938e-05 secs
+DEBUG:root:Batch 168 compute time: 1.0376534461975098 secs
+DEBUG:root:Batch 168 update time: 0.13757729530334473 secs
+DEBUG:root:Batch 168 update metric time 0.00254058837890625 secs
+DEBUG:root:Batch 168 prepare time 0.0005826950073242188 secs
+DEBUG:root:End Batch callbacks time 0.00015783309936523438 secs
+DEBUG:root:Batch 169 compute time: 1.00704026222229 secs
+DEBUG:root:Batch 169 update time: 0.12096762657165527 secs
+DEBUG:root:Batch 169 update metric time 0.002649068832397461 secs
+DEBUG:root:Batch 169 prepare time 0.0005667209625244141 secs
+DEBUG:root:End Batch callbacks time 8.7738037109375e-05 secs
+DEBUG:root:Batch 170 compute time: 1.0448086261749268 secs
+DEBUG:root:Batch 170 update time: 0.1136472225189209 secs
+DEBUG:root:Batch 170 update metric time 0.0026335716247558594 secs
+DEBUG:root:Batch 170 prepare time 0.0005702972412109375 secs
+DEBUG:root:End Batch callbacks time 8.296966552734375e-05 secs
+DEBUG:root:Batch 171 compute time: 1.0336542129516602 secs
+DEBUG:root:Batch 171 update time: 0.11482048034667969 secs
+DEBUG:root:Batch 171 update metric time 0.0028908252716064453 secs
+DEBUG:root:Batch 171 prepare time 0.0005869865417480469 secs
+DEBUG:root:End Batch callbacks time 8.487701416015625e-05 secs
+DEBUG:root:Batch 172 compute time: 1.0563898086547852 secs
+DEBUG:root:Batch 172 update time: 0.10583305358886719 secs
+DEBUG:root:Batch 172 update metric time 0.0029954910278320312 secs
+DEBUG:root:Batch 172 prepare time 0.0005855560302734375 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 173 compute time: 1.0807201862335205 secs
+DEBUG:root:Batch 173 update time: 0.11210370063781738 secs
+DEBUG:root:Batch 173 update metric time 0.002685546875 secs
+DEBUG:root:Batch 173 prepare time 0.0004391670227050781 secs
+DEBUG:root:End Batch callbacks time 8.344650268554688e-05 secs
+DEBUG:root:Batch 174 compute time: 1.067981243133545 secs
+DEBUG:root:Batch 174 update time: 0.10682892799377441 secs
+DEBUG:root:Batch 174 update metric time 0.0027816295623779297 secs
+DEBUG:root:Batch 174 prepare time 0.0005459785461425781 secs
+DEBUG:root:End Batch callbacks time 8.702278137207031e-05 secs
+DEBUG:root:Batch 175 compute time: 1.0559518337249756 secs
+DEBUG:root:Batch 175 update time: 0.10412192344665527 secs
+DEBUG:root:Batch 175 update metric time 0.0028171539306640625 secs
+DEBUG:root:Batch 175 prepare time 0.0005614757537841797 secs
+DEBUG:root:End Batch callbacks time 8.249282836914062e-05 secs
+DEBUG:root:Batch 176 compute time: 1.0427758693695068 secs
+DEBUG:root:Batch 176 update time: 0.10447883605957031 secs
+DEBUG:root:Batch 176 update metric time 0.002737760543823242 secs
+DEBUG:root:Batch 176 prepare time 0.0005636215209960938 secs
+DEBUG:root:End Batch callbacks time 8.368492126464844e-05 secs
+DEBUG:root:Batch 177 compute time: 1.0492560863494873 secs
+DEBUG:root:Batch 177 update time: 0.11210060119628906 secs
+DEBUG:root:Batch 177 update metric time 0.0025544166564941406 secs
+DEBUG:root:Batch 177 prepare time 0.0005640983581542969 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 178 compute time: 1.0650534629821777 secs
+DEBUG:root:Batch 178 update time: 0.10765457153320312 secs
+DEBUG:root:Batch 178 update metric time 0.0024323463439941406 secs
+DEBUG:root:Batch 178 prepare time 0.0005278587341308594 secs
+DEBUG:root:End Batch callbacks time 8.988380432128906e-05 secs
+DEBUG:root:Batch 179 compute time: 1.0729162693023682 secs
+DEBUG:root:Batch 179 update time: 0.10548090934753418 secs
+DEBUG:root:Batch 179 update metric time 0.0026912689208984375 secs
+DEBUG:root:Batch 179 prepare time 0.000576019287109375 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 180 compute time: 1.0470914840698242 secs
+DEBUG:root:Batch 180 update time: 0.11484575271606445 secs
+DEBUG:root:Batch 180 update metric time 0.0026824474334716797 secs
+DEBUG:root:Batch 180 prepare time 0.0005474090576171875 secs
+INFO:root:Epoch[0] Batch [160-180]	Speed: 108.67 samples/sec	accuracy=0.450391
+DEBUG:root:End Batch callbacks time 0.0003147125244140625 secs
+DEBUG:root:Batch 181 compute time: 1.0436906814575195 secs
+DEBUG:root:Batch 181 update time: 0.12599396705627441 secs
+DEBUG:root:Batch 181 update metric time 0.0027799606323242188 secs
+DEBUG:root:Batch 181 prepare time 0.00048065185546875 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 182 compute time: 0.9832656383514404 secs
+DEBUG:root:Batch 182 update time: 0.10890960693359375 secs
+DEBUG:root:Batch 182 update metric time 0.0026090145111083984 secs
+DEBUG:root:Batch 182 prepare time 0.0006608963012695312 secs
+DEBUG:root:End Batch callbacks time 9.846687316894531e-05 secs
+DEBUG:root:Batch 183 compute time: 1.036849021911621 secs
+DEBUG:root:Batch 183 update time: 0.12310385704040527 secs
+DEBUG:root:Batch 183 update metric time 0.0023920536041259766 secs
+DEBUG:root:Batch 183 prepare time 0.000514984130859375 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 184 compute time: 1.0476257801055908 secs
+DEBUG:root:Batch 184 update time: 0.12200808525085449 secs
+DEBUG:root:Batch 184 update metric time 0.002391815185546875 secs
+DEBUG:root:Batch 184 prepare time 0.0005805492401123047 secs
+DEBUG:root:End Batch callbacks time 8.487701416015625e-05 secs
+DEBUG:root:Batch 185 compute time: 1.035003662109375 secs
+DEBUG:root:Batch 185 update time: 0.11865687370300293 secs
+DEBUG:root:Batch 185 update metric time 0.0026540756225585938 secs
+DEBUG:root:Batch 185 prepare time 0.0005328655242919922 secs
+DEBUG:root:End Batch callbacks time 8.678436279296875e-05 secs
+DEBUG:root:Batch 186 compute time: 1.0646278858184814 secs
+DEBUG:root:Batch 186 update time: 0.11400604248046875 secs
+DEBUG:root:Batch 186 update metric time 0.0026121139526367188 secs
+DEBUG:root:Batch 186 prepare time 0.0005714893341064453 secs
+DEBUG:root:End Batch callbacks time 8.225440979003906e-05 secs
+DEBUG:root:Batch 187 compute time: 1.043370008468628 secs
+DEBUG:root:Batch 187 update time: 0.11492633819580078 secs
+DEBUG:root:Batch 187 update metric time 0.002605915069580078 secs
+DEBUG:root:Batch 187 prepare time 0.00042629241943359375 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 188 compute time: 1.0406372547149658 secs
+DEBUG:root:Batch 188 update time: 0.11224055290222168 secs
+DEBUG:root:Batch 188 update metric time 0.0024209022521972656 secs
+DEBUG:root:Batch 188 prepare time 0.0005440711975097656 secs
+DEBUG:root:End Batch callbacks time 9.679794311523438e-05 secs
+DEBUG:root:Batch 189 compute time: 1.0348711013793945 secs
+DEBUG:root:Batch 189 update time: 0.1190950870513916 secs
+DEBUG:root:Batch 189 update metric time 0.0028297901153564453 secs
+DEBUG:root:Batch 189 prepare time 0.0006127357482910156 secs
+DEBUG:root:End Batch callbacks time 9.083747863769531e-05 secs
+DEBUG:root:Batch 190 compute time: 1.0532898902893066 secs
+DEBUG:root:Batch 190 update time: 0.12157630920410156 secs
+DEBUG:root:Batch 190 update metric time 0.0024330615997314453 secs
+DEBUG:root:Batch 190 prepare time 0.0005278587341308594 secs
+DEBUG:root:End Batch callbacks time 8.559226989746094e-05 secs
+DEBUG:root:Batch 191 compute time: 1.041344404220581 secs
+DEBUG:root:Batch 191 update time: 0.11379742622375488 secs
+DEBUG:root:Batch 191 update metric time 0.002476215362548828 secs
+DEBUG:root:Batch 191 prepare time 0.0005829334259033203 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 192 compute time: 1.0758976936340332 secs
+DEBUG:root:Batch 192 update time: 0.11170697212219238 secs
+DEBUG:root:Batch 192 update metric time 0.0025093555450439453 secs
+DEBUG:root:Batch 192 prepare time 0.0005254745483398438 secs
+DEBUG:root:End Batch callbacks time 8.654594421386719e-05 secs
+DEBUG:root:Batch 193 compute time: 1.0546717643737793 secs
+DEBUG:root:Batch 193 update time: 0.1060791015625 secs
+DEBUG:root:Batch 193 update metric time 0.002317190170288086 secs
+DEBUG:root:Batch 193 prepare time 0.00047278404235839844 secs
+DEBUG:root:End Batch callbacks time 8.678436279296875e-05 secs
+DEBUG:root:Batch 194 compute time: 1.0918161869049072 secs
+DEBUG:root:Batch 194 update time: 0.11110854148864746 secs
+DEBUG:root:Batch 194 update metric time 0.0025358200073242188 secs
+DEBUG:root:Batch 194 prepare time 0.0005483627319335938 secs
+DEBUG:root:End Batch callbacks time 8.273124694824219e-05 secs
+DEBUG:root:Batch 195 compute time: 1.088791847229004 secs
+DEBUG:root:Batch 195 update time: 0.11740517616271973 secs
+DEBUG:root:Batch 195 update metric time 0.0026559829711914062 secs
+DEBUG:root:Batch 195 prepare time 0.0006730556488037109 secs
+DEBUG:root:End Batch callbacks time 8.463859558105469e-05 secs
+DEBUG:root:Batch 196 compute time: 1.0877676010131836 secs
+DEBUG:root:Batch 196 update time: 0.1128077507019043 secs
+DEBUG:root:Batch 196 update metric time 0.0025179386138916016 secs
+DEBUG:root:Batch 196 prepare time 0.0005688667297363281 secs
+DEBUG:root:End Batch callbacks time 0.0001583099365234375 secs
+DEBUG:root:Batch 197 compute time: 1.0733470916748047 secs
+DEBUG:root:Batch 197 update time: 0.10909271240234375 secs
+DEBUG:root:Batch 197 update metric time 0.0025033950805664062 secs
+DEBUG:root:Batch 197 prepare time 0.0005576610565185547 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 198 compute time: 1.1109490394592285 secs
+DEBUG:root:Batch 198 update time: 0.11739778518676758 secs
+DEBUG:root:Batch 198 update metric time 0.002482891082763672 secs
+DEBUG:root:Batch 198 prepare time 0.0006663799285888672 secs
+DEBUG:root:End Batch callbacks time 8.869171142578125e-05 secs
+DEBUG:root:Batch 199 compute time: 1.0982253551483154 secs
+DEBUG:root:Batch 199 update time: 0.11282634735107422 secs
+DEBUG:root:Batch 199 update metric time 0.0025680065155029297 secs
+DEBUG:root:Batch 199 prepare time 0.0005517005920410156 secs
+DEBUG:root:End Batch callbacks time 8.440017700195312e-05 secs
+DEBUG:root:Batch 200 compute time: 1.0824851989746094 secs
+DEBUG:root:Batch 200 update time: 0.11535120010375977 secs
+DEBUG:root:Batch 200 update metric time 0.0026171207427978516 secs
+DEBUG:root:Batch 200 prepare time 0.0005464553833007812 secs
+INFO:root:Epoch[0] Batch [180-200]	Speed: 108.35 samples/sec	accuracy=0.447266
+DEBUG:root:End Batch callbacks time 0.00031185150146484375 secs
+DEBUG:root:Batch 201 compute time: 1.096095085144043 secs
+DEBUG:root:Batch 201 update time: 0.11735820770263672 secs
+DEBUG:root:Batch 201 update metric time 0.002626657485961914 secs
+DEBUG:root:Batch 201 prepare time 0.0005552768707275391 secs
+DEBUG:root:End Batch callbacks time 8.893013000488281e-05 secs
+DEBUG:root:Batch 202 compute time: 1.0707471370697021 secs
+DEBUG:root:Batch 202 update time: 0.11620187759399414 secs
+DEBUG:root:Batch 202 update metric time 0.0026063919067382812 secs
+DEBUG:root:Batch 202 prepare time 0.0004363059997558594 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 203 compute time: 1.0864615440368652 secs
+DEBUG:root:Batch 203 update time: 0.10731625556945801 secs
+DEBUG:root:Batch 203 update metric time 0.002578258514404297 secs
+DEBUG:root:Batch 203 prepare time 0.0005450248718261719 secs
+DEBUG:root:End Batch callbacks time 8.368492126464844e-05 secs
+DEBUG:root:Batch 204 compute time: 1.0886356830596924 secs
+DEBUG:root:Batch 204 update time: 0.1066889762878418 secs
+DEBUG:root:Batch 204 update metric time 0.0025260448455810547 secs
+DEBUG:root:Batch 204 prepare time 0.0005452632904052734 secs
+DEBUG:root:End Batch callbacks time 0.0001633167266845703 secs
+DEBUG:root:Batch 205 compute time: 1.0982751846313477 secs
+DEBUG:root:Batch 205 update time: 0.1166527271270752 secs
+DEBUG:root:Batch 205 update metric time 0.0026683807373046875 secs
+DEBUG:root:Batch 205 prepare time 0.0005435943603515625 secs
+DEBUG:root:End Batch callbacks time 8.726119995117188e-05 secs
+DEBUG:root:Batch 206 compute time: 1.0790338516235352 secs
+DEBUG:root:Batch 206 update time: 0.11014914512634277 secs
+DEBUG:root:Batch 206 update metric time 0.002499103546142578 secs
+DEBUG:root:Batch 206 prepare time 0.0005679130554199219 secs
+DEBUG:root:End Batch callbacks time 8.296966552734375e-05 secs
+DEBUG:root:Batch 207 compute time: 1.0773358345031738 secs
+DEBUG:root:Batch 207 update time: 0.11106634140014648 secs
+DEBUG:root:Batch 207 update metric time 0.0021331310272216797 secs
+DEBUG:root:Batch 207 prepare time 0.0005338191986083984 secs
+DEBUG:root:End Batch callbacks time 8.177757263183594e-05 secs
+DEBUG:root:Batch 208 compute time: 1.0649092197418213 secs
+DEBUG:root:Batch 208 update time: 0.11336445808410645 secs
+DEBUG:root:Batch 208 update metric time 0.002408742904663086 secs
+DEBUG:root:Batch 208 prepare time 0.0006122589111328125 secs
+DEBUG:root:End Batch callbacks time 9.703636169433594e-05 secs
+DEBUG:root:Batch 209 compute time: 1.0784404277801514 secs
+DEBUG:root:Batch 209 update time: 0.1137998104095459 secs
+DEBUG:root:Batch 209 update metric time 0.002508401870727539 secs
+DEBUG:root:Batch 209 prepare time 0.0005426406860351562 secs
+DEBUG:root:End Batch callbacks time 8.7738037109375e-05 secs
+DEBUG:root:Batch 210 compute time: 1.0757570266723633 secs
+DEBUG:root:Batch 210 update time: 0.11098194122314453 secs
+DEBUG:root:Batch 210 update metric time 0.0026519298553466797 secs
+DEBUG:root:Batch 210 prepare time 0.00055694580078125 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 211 compute time: 1.0903775691986084 secs
+DEBUG:root:Batch 211 update time: 0.11277341842651367 secs
+DEBUG:root:Batch 211 update metric time 0.002715587615966797 secs
+DEBUG:root:Batch 211 prepare time 0.0005466938018798828 secs
+DEBUG:root:End Batch callbacks time 8.273124694824219e-05 secs
+DEBUG:root:Batch 212 compute time: 1.0413997173309326 secs
+DEBUG:root:Batch 212 update time: 0.1106572151184082 secs
+DEBUG:root:Batch 212 update metric time 0.0026879310607910156 secs
+DEBUG:root:Batch 212 prepare time 0.0005564689636230469 secs
+DEBUG:root:End Batch callbacks time 8.320808410644531e-05 secs
+DEBUG:root:Batch 213 compute time: 1.0721170902252197 secs
+DEBUG:root:Batch 213 update time: 0.10907769203186035 secs
+DEBUG:root:Batch 213 update metric time 0.0026221275329589844 secs
+DEBUG:root:Batch 213 prepare time 0.0005550384521484375 secs
+DEBUG:root:End Batch callbacks time 8.344650268554688e-05 secs
+DEBUG:root:Batch 214 compute time: 1.1014988422393799 secs
+DEBUG:root:Batch 214 update time: 0.11320662498474121 secs
+DEBUG:root:Batch 214 update metric time 0.002501249313354492 secs
+DEBUG:root:Batch 214 prepare time 0.0005431175231933594 secs
+DEBUG:root:End Batch callbacks time 8.559226989746094e-05 secs
+DEBUG:root:Batch 215 compute time: 1.1060023307800293 secs
+DEBUG:root:Batch 215 update time: 0.1127777099609375 secs
+DEBUG:root:Batch 215 update metric time 0.0024640560150146484 secs
+DEBUG:root:Batch 215 prepare time 0.00054931640625 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 216 compute time: 1.0757420063018799 secs
+DEBUG:root:Batch 216 update time: 0.11132144927978516 secs
+DEBUG:root:Batch 216 update metric time 0.002538442611694336 secs
+DEBUG:root:Batch 216 prepare time 0.0005476474761962891 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 217 compute time: 1.0814521312713623 secs
+DEBUG:root:Batch 217 update time: 0.10626983642578125 secs
+DEBUG:root:Batch 217 update metric time 0.002475261688232422 secs
+DEBUG:root:Batch 217 prepare time 0.00043010711669921875 secs
+DEBUG:root:End Batch callbacks time 8.296966552734375e-05 secs
+DEBUG:root:Batch 218 compute time: 1.0852453708648682 secs
+DEBUG:root:Batch 218 update time: 0.11121511459350586 secs
+DEBUG:root:Batch 218 update metric time 0.0025141239166259766 secs
+DEBUG:root:Batch 218 prepare time 0.00055694580078125 secs
+DEBUG:root:End Batch callbacks time 8.702278137207031e-05 secs
+DEBUG:root:Batch 219 compute time: 1.107593297958374 secs
+DEBUG:root:Batch 219 update time: 0.12557244300842285 secs
+DEBUG:root:Batch 219 update metric time 0.0024831295013427734 secs
+DEBUG:root:Batch 219 prepare time 0.0005557537078857422 secs
+DEBUG:root:End Batch callbacks time 8.988380432128906e-05 secs
+DEBUG:root:Batch 220 compute time: 1.0866937637329102 secs
+DEBUG:root:Batch 220 update time: 0.11374139785766602 secs
+DEBUG:root:Batch 220 update metric time 0.003056049346923828 secs
+DEBUG:root:Batch 220 prepare time 0.0005600452423095703 secs
+INFO:root:Epoch[0] Batch [200-220]	Speed: 106.45 samples/sec	accuracy=0.473828
+DEBUG:root:End Batch callbacks time 0.00040435791015625 secs
+DEBUG:root:Batch 221 compute time: 1.0791184902191162 secs
+DEBUG:root:Batch 221 update time: 0.1134800910949707 secs
+DEBUG:root:Batch 221 update metric time 0.002616405487060547 secs
+DEBUG:root:Batch 221 prepare time 0.0005588531494140625 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 222 compute time: 1.0761950016021729 secs
+DEBUG:root:Batch 222 update time: 0.1133725643157959 secs
+DEBUG:root:Batch 222 update metric time 0.0024917125701904297 secs
+DEBUG:root:Batch 222 prepare time 0.0005459785461425781 secs
+DEBUG:root:End Batch callbacks time 8.416175842285156e-05 secs
+DEBUG:root:Batch 223 compute time: 1.048356294631958 secs
+DEBUG:root:Batch 223 update time: 0.10964703559875488 secs
+DEBUG:root:Batch 223 update metric time 0.002468585968017578 secs
+DEBUG:root:Batch 223 prepare time 0.0005462169647216797 secs
+DEBUG:root:End Batch callbacks time 8.797645568847656e-05 secs
+DEBUG:root:Batch 224 compute time: 1.0865905284881592 secs
+DEBUG:root:Batch 224 update time: 0.1117868423461914 secs
+DEBUG:root:Batch 224 update metric time 0.002489328384399414 secs
+DEBUG:root:Batch 224 prepare time 0.0005671977996826172 secs
+DEBUG:root:End Batch callbacks time 8.654594421386719e-05 secs
+DEBUG:root:Batch 225 compute time: 1.1037721633911133 secs
+DEBUG:root:Batch 225 update time: 0.10907530784606934 secs
+DEBUG:root:Batch 225 update metric time 0.0027086734771728516 secs
+DEBUG:root:Batch 225 prepare time 0.0006725788116455078 secs
+DEBUG:root:End Batch callbacks time 8.702278137207031e-05 secs
+DEBUG:root:Batch 226 compute time: 1.0577728748321533 secs
+DEBUG:root:Batch 226 update time: 0.1083221435546875 secs
+DEBUG:root:Batch 226 update metric time 0.002617359161376953 secs
+DEBUG:root:Batch 226 prepare time 0.0004394054412841797 secs
+DEBUG:root:End Batch callbacks time 0.00011610984802246094 secs
+DEBUG:root:Batch 227 compute time: 1.076906681060791 secs
+DEBUG:root:Batch 227 update time: 0.10948944091796875 secs
+DEBUG:root:Batch 227 update metric time 0.002518892288208008 secs
+DEBUG:root:Batch 227 prepare time 0.0005495548248291016 secs
+DEBUG:root:End Batch callbacks time 8.511543273925781e-05 secs
+DEBUG:root:Batch 228 compute time: 1.0768914222717285 secs
+DEBUG:root:Batch 228 update time: 0.11887383460998535 secs
+DEBUG:root:Batch 228 update metric time 0.0025429725646972656 secs
+DEBUG:root:Batch 228 prepare time 0.0005359649658203125 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 229 compute time: 1.0620670318603516 secs
+DEBUG:root:Batch 229 update time: 0.10844588279724121 secs
+DEBUG:root:Batch 229 update metric time 0.0026531219482421875 secs
+DEBUG:root:Batch 229 prepare time 0.0005621910095214844 secs
+DEBUG:root:End Batch callbacks time 8.416175842285156e-05 secs
+DEBUG:root:Batch 230 compute time: 1.069901704788208 secs
+DEBUG:root:Batch 230 update time: 0.11106371879577637 secs
+DEBUG:root:Batch 230 update metric time 0.002574443817138672 secs
+DEBUG:root:Batch 230 prepare time 0.0005636215209960938 secs
+DEBUG:root:End Batch callbacks time 8.344650268554688e-05 secs
+DEBUG:root:Batch 231 compute time: 1.0800235271453857 secs
+DEBUG:root:Batch 231 update time: 0.11133050918579102 secs
+DEBUG:root:Batch 231 update metric time 0.0024652481079101562 secs
+DEBUG:root:Batch 231 prepare time 0.00042891502380371094 secs
+DEBUG:root:End Batch callbacks time 8.416175842285156e-05 secs
+DEBUG:root:Batch 232 compute time: 1.093033790588379 secs
+DEBUG:root:Batch 232 update time: 0.11742067337036133 secs
+DEBUG:root:Batch 232 update metric time 0.0026578903198242188 secs
+DEBUG:root:Batch 232 prepare time 0.0005359649658203125 secs
+DEBUG:root:End Batch callbacks time 8.392333984375e-05 secs
+DEBUG:root:Batch 233 compute time: 1.1139342784881592 secs
+DEBUG:root:Batch 233 update time: 0.10893559455871582 secs
+DEBUG:root:Batch 233 update metric time 0.0024755001068115234 secs
+DEBUG:root:Batch 233 prepare time 0.0005578994750976562 secs
+DEBUG:root:End Batch callbacks time 8.463859558105469e-05 secs
+DEBUG:root:Batch 234 compute time: 1.1119434833526611 secs
+DEBUG:root:Batch 234 update time: 0.119720458984375 secs
+DEBUG:root:Batch 234 update metric time 0.002653837203979492 secs
+DEBUG:root:Batch 234 prepare time 0.0005500316619873047 secs
+DEBUG:root:End Batch callbacks time 8.487701416015625e-05 secs
+DEBUG:root:Batch 235 compute time: 1.0941112041473389 secs
+DEBUG:root:Batch 235 update time: 0.1087946891784668 secs
+DEBUG:root:Batch 235 update metric time 0.0025119781494140625 secs
+DEBUG:root:Batch 235 prepare time 0.0006210803985595703 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 236 compute time: 1.0757482051849365 secs
+DEBUG:root:Batch 236 update time: 0.11043095588684082 secs
+DEBUG:root:Batch 236 update metric time 0.00257110595703125 secs
+DEBUG:root:Batch 236 prepare time 0.0005526542663574219 secs
+DEBUG:root:End Batch callbacks time 9.870529174804688e-05 secs
+DEBUG:root:Batch 237 compute time: 1.0696346759796143 secs
+DEBUG:root:Batch 237 update time: 0.10968542098999023 secs
+DEBUG:root:Batch 237 update metric time 0.0026350021362304688 secs
+DEBUG:root:Batch 237 prepare time 0.0005598068237304688 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 238 compute time: 1.1011338233947754 secs
+DEBUG:root:Batch 238 update time: 0.11165857315063477 secs
+DEBUG:root:Batch 238 update metric time 0.002582550048828125 secs
+DEBUG:root:Batch 238 prepare time 0.0005447864532470703 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 239 compute time: 1.0975196361541748 secs
+DEBUG:root:Batch 239 update time: 0.11574649810791016 secs
+DEBUG:root:Batch 239 update metric time 0.002595186233520508 secs
+DEBUG:root:Batch 239 prepare time 0.0005495548248291016 secs
+DEBUG:root:End Batch callbacks time 8.368492126464844e-05 secs
+DEBUG:root:Batch 240 compute time: 1.0806868076324463 secs
+DEBUG:root:Batch 240 update time: 0.13269758224487305 secs
+DEBUG:root:Batch 240 update metric time 0.002897024154663086 secs
+DEBUG:root:Batch 240 prepare time 0.0005612373352050781 secs
+INFO:root:Epoch[0] Batch [220-240]	Speed: 106.44 samples/sec	accuracy=0.475781
+DEBUG:root:End Batch callbacks time 0.0003230571746826172 secs
+DEBUG:root:Batch 241 compute time: 1.0682005882263184 secs
+DEBUG:root:Batch 241 update time: 0.10830092430114746 secs
+DEBUG:root:Batch 241 update metric time 0.002310037612915039 secs
+DEBUG:root:Batch 241 prepare time 0.0004322528839111328 secs
+DEBUG:root:End Batch callbacks time 8.511543273925781e-05 secs
+DEBUG:root:Batch 242 compute time: 1.0737593173980713 secs
+DEBUG:root:Batch 242 update time: 0.11173510551452637 secs
+DEBUG:root:Batch 242 update metric time 0.002704143524169922 secs
+DEBUG:root:Batch 242 prepare time 0.0005803108215332031 secs
+DEBUG:root:End Batch callbacks time 9.059906005859375e-05 secs
+DEBUG:root:Batch 243 compute time: 1.086334228515625 secs
+DEBUG:root:Batch 243 update time: 0.1114342212677002 secs
+DEBUG:root:Batch 243 update metric time 0.002577543258666992 secs
+DEBUG:root:Batch 243 prepare time 0.0005605220794677734 secs
+DEBUG:root:End Batch callbacks time 8.678436279296875e-05 secs
+DEBUG:root:Batch 244 compute time: 1.0725152492523193 secs
+DEBUG:root:Batch 244 update time: 0.11218380928039551 secs
+DEBUG:root:Batch 244 update metric time 0.0025916099548339844 secs
+DEBUG:root:Batch 244 prepare time 0.0005853176116943359 secs
+DEBUG:root:End Batch callbacks time 8.821487426757812e-05 secs
+DEBUG:root:Batch 245 compute time: 1.0916593074798584 secs
+DEBUG:root:Batch 245 update time: 0.11019039154052734 secs
+DEBUG:root:Batch 245 update metric time 0.0025916099548339844 secs
+DEBUG:root:Batch 245 prepare time 0.0005524158477783203 secs
+DEBUG:root:End Batch callbacks time 8.463859558105469e-05 secs
+DEBUG:root:Batch 246 compute time: 1.096954584121704 secs
+DEBUG:root:Batch 246 update time: 0.10899758338928223 secs
+DEBUG:root:Batch 246 update metric time 0.0025081634521484375 secs
+DEBUG:root:Batch 246 prepare time 0.00043487548828125 secs
+DEBUG:root:End Batch callbacks time 8.463859558105469e-05 secs
+DEBUG:root:Batch 247 compute time: 1.0733351707458496 secs
+DEBUG:root:Batch 247 update time: 0.10905861854553223 secs
+DEBUG:root:Batch 247 update metric time 0.0025157928466796875 secs
+DEBUG:root:Batch 247 prepare time 0.0005524158477783203 secs
+DEBUG:root:End Batch callbacks time 8.463859558105469e-05 secs
+DEBUG:root:Batch 248 compute time: 1.0856287479400635 secs
+DEBUG:root:Batch 248 update time: 0.10967326164245605 secs
+DEBUG:root:Batch 248 update metric time 0.004927396774291992 secs
+DEBUG:root:Batch 248 prepare time 0.0005626678466796875 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 249 compute time: 1.086176872253418 secs
+DEBUG:root:Batch 249 update time: 0.10870718955993652 secs
+DEBUG:root:Batch 249 update metric time 0.0026640892028808594 secs
+DEBUG:root:Batch 249 prepare time 0.0005877017974853516 secs
+DEBUG:root:End Batch callbacks time 0.00010323524475097656 secs
+DEBUG:root:Batch 250 compute time: 1.0734007358551025 secs
+DEBUG:root:Batch 250 update time: 0.11049461364746094 secs
+DEBUG:root:Batch 250 update metric time 0.002615213394165039 secs
+DEBUG:root:Batch 250 prepare time 0.0005719661712646484 secs
+DEBUG:root:End Batch callbacks time 0.00010633468627929688 secs
+DEBUG:root:Batch 251 compute time: 1.1058845520019531 secs
+DEBUG:root:Batch 251 update time: 0.11076164245605469 secs
+DEBUG:root:Batch 251 update metric time 0.002675771713256836 secs
+DEBUG:root:Batch 251 prepare time 0.0005548000335693359 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 252 compute time: 1.1088380813598633 secs
+DEBUG:root:Batch 252 update time: 0.11691474914550781 secs
+DEBUG:root:Batch 252 update metric time 0.002533435821533203 secs
+DEBUG:root:Batch 252 prepare time 0.0005538463592529297 secs
+DEBUG:root:End Batch callbacks time 8.821487426757812e-05 secs
+DEBUG:root:Batch 253 compute time: 1.109588384628296 secs
+DEBUG:root:Batch 253 update time: 0.10869073867797852 secs
+DEBUG:root:Batch 253 update metric time 0.0026667118072509766 secs
+DEBUG:root:Batch 253 prepare time 0.0005786418914794922 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 254 compute time: 1.1067306995391846 secs
+DEBUG:root:Batch 254 update time: 0.11645197868347168 secs
+DEBUG:root:Batch 254 update metric time 0.0025599002838134766 secs
+DEBUG:root:Batch 254 prepare time 0.0005571842193603516 secs
+DEBUG:root:End Batch callbacks time 8.511543273925781e-05 secs
+DEBUG:root:Batch 255 compute time: 1.0794227123260498 secs
+DEBUG:root:Batch 255 update time: 0.1140434741973877 secs
+DEBUG:root:Batch 255 update metric time 0.0024521350860595703 secs
+DEBUG:root:Batch 255 prepare time 0.0005650520324707031 secs
+DEBUG:root:End Batch callbacks time 8.392333984375e-05 secs
+DEBUG:root:Batch 256 compute time: 1.0907578468322754 secs
+DEBUG:root:Batch 256 update time: 0.11098670959472656 secs
+DEBUG:root:Batch 256 update metric time 0.0025205612182617188 secs
+DEBUG:root:Batch 256 prepare time 0.0005652904510498047 secs
+DEBUG:root:End Batch callbacks time 8.535385131835938e-05 secs
+DEBUG:root:Batch 257 compute time: 1.0918099880218506 secs
+DEBUG:root:Batch 257 update time: 0.11016559600830078 secs
+DEBUG:root:Batch 257 update metric time 0.0026426315307617188 secs
+DEBUG:root:Batch 257 prepare time 0.0005626678466796875 secs
+DEBUG:root:End Batch callbacks time 8.487701416015625e-05 secs
+DEBUG:root:Batch 258 compute time: 1.0849032402038574 secs
+DEBUG:root:Batch 258 update time: 0.10503268241882324 secs
+DEBUG:root:Batch 258 update metric time 0.0027222633361816406 secs
+DEBUG:root:Batch 258 prepare time 0.000553131103515625 secs
+DEBUG:root:End Batch callbacks time 9.179115295410156e-05 secs
+DEBUG:root:Batch 259 compute time: 1.0898878574371338 secs
+DEBUG:root:Batch 259 update time: 0.10579633712768555 secs
+DEBUG:root:Batch 259 update metric time 0.0025527477264404297 secs
+DEBUG:root:Batch 259 prepare time 0.0005576610565185547 secs
+DEBUG:root:End Batch callbacks time 8.535385131835938e-05 secs
+DEBUG:root:Batch 260 compute time: 1.0946223735809326 secs
+DEBUG:root:Batch 260 update time: 0.11334872245788574 secs
+DEBUG:root:Batch 260 update metric time 0.002680063247680664 secs
+DEBUG:root:Batch 260 prepare time 0.0005478858947753906 secs
+INFO:root:Epoch[0] Batch [240-260]	Speed: 106.14 samples/sec	accuracy=0.472656
+DEBUG:root:End Batch callbacks time 0.00032067298889160156 secs
+DEBUG:root:Batch 261 compute time: 1.1063718795776367 secs
+DEBUG:root:Batch 261 update time: 0.10999774932861328 secs
+DEBUG:root:Batch 261 update metric time 0.002687215805053711 secs
+DEBUG:root:Batch 261 prepare time 0.0004286766052246094 secs
+DEBUG:root:End Batch callbacks time 8.320808410644531e-05 secs
+DEBUG:root:Batch 262 compute time: 1.0820896625518799 secs
+DEBUG:root:Batch 262 update time: 0.1088259220123291 secs
+DEBUG:root:Batch 262 update metric time 0.002473115921020508 secs
+DEBUG:root:Batch 262 prepare time 0.0006499290466308594 secs
+DEBUG:root:End Batch callbacks time 8.654594421386719e-05 secs
+DEBUG:root:Batch 263 compute time: 1.095902442932129 secs
+DEBUG:root:Batch 263 update time: 0.11220955848693848 secs
+DEBUG:root:Batch 263 update metric time 0.002434968948364258 secs
+DEBUG:root:Batch 263 prepare time 0.0005595684051513672 secs
+DEBUG:root:End Batch callbacks time 8.368492126464844e-05 secs
+DEBUG:root:Batch 264 compute time: 1.087829828262329 secs
+DEBUG:root:Batch 264 update time: 0.11341071128845215 secs
+DEBUG:root:Batch 264 update metric time 0.002516031265258789 secs
+DEBUG:root:Batch 264 prepare time 0.0005519390106201172 secs
+DEBUG:root:End Batch callbacks time 8.654594421386719e-05 secs
+DEBUG:root:Batch 265 compute time: 1.107778787612915 secs
+DEBUG:root:Batch 265 update time: 0.11038613319396973 secs
+DEBUG:root:Batch 265 update metric time 0.002496004104614258 secs
+DEBUG:root:Batch 265 prepare time 0.0005540847778320312 secs
+DEBUG:root:End Batch callbacks time 8.797645568847656e-05 secs
+DEBUG:root:Batch 266 compute time: 1.0748744010925293 secs
+DEBUG:root:Batch 266 update time: 0.1112368106842041 secs
+DEBUG:root:Batch 266 update metric time 0.002361774444580078 secs
+DEBUG:root:Batch 266 prepare time 0.0005755424499511719 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 267 compute time: 1.074026107788086 secs
+DEBUG:root:Batch 267 update time: 0.10827159881591797 secs
+DEBUG:root:Batch 267 update metric time 0.0025908946990966797 secs
+DEBUG:root:Batch 267 prepare time 0.0006036758422851562 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 268 compute time: 1.0367982387542725 secs
+DEBUG:root:Batch 268 update time: 0.11230611801147461 secs
+DEBUG:root:Batch 268 update metric time 0.003153085708618164 secs
+DEBUG:root:Batch 268 prepare time 0.0005700588226318359 secs
+DEBUG:root:End Batch callbacks time 8.869171142578125e-05 secs
+DEBUG:root:Batch 269 compute time: 1.058577537536621 secs
+DEBUG:root:Batch 269 update time: 0.1123814582824707 secs
+DEBUG:root:Batch 269 update metric time 0.002578258514404297 secs
+DEBUG:root:Batch 269 prepare time 0.0005755424499511719 secs
+DEBUG:root:End Batch callbacks time 8.797645568847656e-05 secs
+DEBUG:root:Batch 270 compute time: 1.0711452960968018 secs
+DEBUG:root:Batch 270 update time: 0.10886454582214355 secs
+DEBUG:root:Batch 270 update metric time 0.002641439437866211 secs
+DEBUG:root:Batch 270 prepare time 0.0005753040313720703 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 271 compute time: 1.080092430114746 secs
+DEBUG:root:Batch 271 update time: 0.11297249794006348 secs
+DEBUG:root:Batch 271 update metric time 0.0025823116302490234 secs
+DEBUG:root:Batch 271 prepare time 0.0005600452423095703 secs
+DEBUG:root:End Batch callbacks time 8.463859558105469e-05 secs
+DEBUG:root:Batch 272 compute time: 1.067133903503418 secs
+DEBUG:root:Batch 272 update time: 0.11941766738891602 secs
+DEBUG:root:Batch 272 update metric time 0.005586862564086914 secs
+DEBUG:root:Batch 272 prepare time 0.0009515285491943359 secs
+DEBUG:root:End Batch callbacks time 0.00017499923706054688 secs
+DEBUG:root:Batch 273 compute time: 1.0585057735443115 secs
+DEBUG:root:Batch 273 update time: 0.10875129699707031 secs
+DEBUG:root:Batch 273 update metric time 0.002623319625854492 secs
+DEBUG:root:Batch 273 prepare time 0.0005638599395751953 secs
+DEBUG:root:End Batch callbacks time 8.96453857421875e-05 secs
+DEBUG:root:Batch 274 compute time: 1.0950202941894531 secs
+DEBUG:root:Batch 274 update time: 0.1060628890991211 secs
+DEBUG:root:Batch 274 update metric time 0.002519845962524414 secs
+DEBUG:root:Batch 274 prepare time 0.0005781650543212891 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 275 compute time: 1.1054508686065674 secs
+DEBUG:root:Batch 275 update time: 0.10652661323547363 secs
+DEBUG:root:Batch 275 update metric time 0.002526521682739258 secs
+DEBUG:root:Batch 275 prepare time 0.0004220008850097656 secs
+DEBUG:root:End Batch callbacks time 8.845329284667969e-05 secs
+DEBUG:root:Batch 276 compute time: 1.0967419147491455 secs
+DEBUG:root:Batch 276 update time: 0.11651968955993652 secs
+DEBUG:root:Batch 276 update metric time 0.002647876739501953 secs
+DEBUG:root:Batch 276 prepare time 0.0005707740783691406 secs
+DEBUG:root:End Batch callbacks time 8.869171142578125e-05 secs
+DEBUG:root:Batch 277 compute time: 1.1055240631103516 secs
+DEBUG:root:Batch 277 update time: 0.11096811294555664 secs
+DEBUG:root:Batch 277 update metric time 0.0024750232696533203 secs
+DEBUG:root:Batch 277 prepare time 0.0006642341613769531 secs
+DEBUG:root:End Batch callbacks time 8.797645568847656e-05 secs
+DEBUG:root:Batch 278 compute time: 1.0948193073272705 secs
+DEBUG:root:Batch 278 update time: 0.11297965049743652 secs
+DEBUG:root:Batch 278 update metric time 0.002817869186401367 secs
+DEBUG:root:Batch 278 prepare time 0.0005400180816650391 secs
+DEBUG:root:End Batch callbacks time 8.797645568847656e-05 secs
+DEBUG:root:Batch 279 compute time: 1.087291955947876 secs
+DEBUG:root:Batch 279 update time: 0.10720086097717285 secs
+DEBUG:root:Batch 279 update metric time 0.002543926239013672 secs
+DEBUG:root:Batch 279 prepare time 0.0006711483001708984 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 280 compute time: 1.0821633338928223 secs
+DEBUG:root:Batch 280 update time: 0.11536002159118652 secs
+DEBUG:root:Batch 280 update metric time 0.002764463424682617 secs
+DEBUG:root:Batch 280 prepare time 0.0005817413330078125 secs
+INFO:root:Epoch[0] Batch [260-280]	Speed: 106.52 samples/sec	accuracy=0.493359
+DEBUG:root:End Batch callbacks time 0.00032329559326171875 secs
+DEBUG:root:Batch 281 compute time: 1.0921061038970947 secs
+DEBUG:root:Batch 281 update time: 0.10963106155395508 secs
+DEBUG:root:Batch 281 update metric time 0.002656221389770508 secs
+DEBUG:root:Batch 281 prepare time 0.0005521774291992188 secs
+DEBUG:root:End Batch callbacks time 9.799003601074219e-05 secs
+DEBUG:root:Batch 282 compute time: 1.0976989269256592 secs
+DEBUG:root:Batch 282 update time: 0.11397290229797363 secs
+DEBUG:root:Batch 282 update metric time 0.002492189407348633 secs
+DEBUG:root:Batch 282 prepare time 0.0006296634674072266 secs
+DEBUG:root:End Batch callbacks time 8.726119995117188e-05 secs
+DEBUG:root:Batch 283 compute time: 1.0881950855255127 secs
+DEBUG:root:Batch 283 update time: 0.11215472221374512 secs
+DEBUG:root:Batch 283 update metric time 0.0025839805603027344 secs
+DEBUG:root:Batch 283 prepare time 0.0005440711975097656 secs
+DEBUG:root:End Batch callbacks time 8.702278137207031e-05 secs
+DEBUG:root:Batch 284 compute time: 1.0918703079223633 secs
+DEBUG:root:Batch 284 update time: 0.11247920989990234 secs
+DEBUG:root:Batch 284 update metric time 0.0026001930236816406 secs
+DEBUG:root:Batch 284 prepare time 0.0005600452423095703 secs
+DEBUG:root:End Batch callbacks time 8.440017700195312e-05 secs
+DEBUG:root:Batch 285 compute time: 1.0881407260894775 secs
+DEBUG:root:Batch 285 update time: 0.12069892883300781 secs
+DEBUG:root:Batch 285 update metric time 0.002244234085083008 secs
+DEBUG:root:Batch 285 prepare time 0.000446319580078125 secs
+DEBUG:root:End Batch callbacks time 9.107589721679688e-05 secs
+DEBUG:root:Batch 286 compute time: 1.092329502105713 secs
+DEBUG:root:Batch 286 update time: 0.11567425727844238 secs
+DEBUG:root:Batch 286 update metric time 0.002536296844482422 secs
+DEBUG:root:Batch 286 prepare time 0.0005581378936767578 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 287 compute time: 1.0890600681304932 secs
+DEBUG:root:Batch 287 update time: 0.10678339004516602 secs
+DEBUG:root:Batch 287 update metric time 0.0026934146881103516 secs
+DEBUG:root:Batch 287 prepare time 0.0005619525909423828 secs
+DEBUG:root:End Batch callbacks time 8.678436279296875e-05 secs
+DEBUG:root:Batch 288 compute time: 1.0853581428527832 secs
+DEBUG:root:Batch 288 update time: 0.11301541328430176 secs
+DEBUG:root:Batch 288 update metric time 0.002553224563598633 secs
+DEBUG:root:Batch 288 prepare time 0.0005447864532470703 secs
+DEBUG:root:End Batch callbacks time 8.988380432128906e-05 secs
+DEBUG:root:Batch 289 compute time: 1.0890700817108154 secs
+DEBUG:root:Batch 289 update time: 0.11883854866027832 secs
+DEBUG:root:Batch 289 update metric time 0.0023577213287353516 secs
+DEBUG:root:Batch 289 prepare time 0.0005085468292236328 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 290 compute time: 1.0638339519500732 secs
+DEBUG:root:Batch 290 update time: 0.11286139488220215 secs
+DEBUG:root:Batch 290 update metric time 0.00250244140625 secs
+DEBUG:root:Batch 290 prepare time 0.0005626678466796875 secs
+DEBUG:root:End Batch callbacks time 0.00010561943054199219 secs
+DEBUG:root:Batch 291 compute time: 1.0860214233398438 secs
+DEBUG:root:Batch 291 update time: 0.11162376403808594 secs
+DEBUG:root:Batch 291 update metric time 0.002501249313354492 secs
+DEBUG:root:Batch 291 prepare time 0.0005745887756347656 secs
+DEBUG:root:End Batch callbacks time 8.7738037109375e-05 secs
+DEBUG:root:Batch 292 compute time: 1.1124224662780762 secs
+DEBUG:root:Batch 292 update time: 0.11428260803222656 secs
+DEBUG:root:Batch 292 update metric time 0.0028121471405029297 secs
+DEBUG:root:Batch 292 prepare time 0.0005786418914794922 secs
+DEBUG:root:End Batch callbacks time 8.821487426757812e-05 secs
+DEBUG:root:Batch 293 compute time: 1.0794453620910645 secs
+DEBUG:root:Batch 293 update time: 0.11143016815185547 secs
+DEBUG:root:Batch 293 update metric time 0.002476930618286133 secs
+DEBUG:root:Batch 293 prepare time 0.0005552768707275391 secs
+DEBUG:root:End Batch callbacks time 0.00016117095947265625 secs
+DEBUG:root:Batch 294 compute time: 1.0753183364868164 secs
+DEBUG:root:Batch 294 update time: 0.11890244483947754 secs
+DEBUG:root:Batch 294 update metric time 0.0026149749755859375 secs
+DEBUG:root:Batch 294 prepare time 0.0005660057067871094 secs
+DEBUG:root:End Batch callbacks time 8.678436279296875e-05 secs
+DEBUG:root:Batch 295 compute time: 1.0833144187927246 secs
+DEBUG:root:Batch 295 update time: 0.1094508171081543 secs
+DEBUG:root:Batch 295 update metric time 0.002552509307861328 secs
+DEBUG:root:Batch 295 prepare time 0.00055694580078125 secs
+DEBUG:root:End Batch callbacks time 9.226799011230469e-05 secs
+DEBUG:root:Batch 296 compute time: 1.0951032638549805 secs
+DEBUG:root:Batch 296 update time: 0.11053657531738281 secs
+DEBUG:root:Batch 296 update metric time 0.002515077590942383 secs
+DEBUG:root:Batch 296 prepare time 0.0005626678466796875 secs
+DEBUG:root:End Batch callbacks time 8.726119995117188e-05 secs
+DEBUG:root:Batch 297 compute time: 1.091334581375122 secs
+DEBUG:root:Batch 297 update time: 0.10738730430603027 secs
+DEBUG:root:Batch 297 update metric time 0.0025606155395507812 secs
+DEBUG:root:Batch 297 prepare time 0.0005481243133544922 secs
+DEBUG:root:End Batch callbacks time 8.678436279296875e-05 secs
+DEBUG:root:Batch 298 compute time: 1.1182129383087158 secs
+DEBUG:root:Batch 298 update time: 0.11224508285522461 secs
+DEBUG:root:Batch 298 update metric time 0.0025565624237060547 secs
+DEBUG:root:Batch 298 prepare time 0.0005462169647216797 secs
+DEBUG:root:End Batch callbacks time 8.487701416015625e-05 secs
+DEBUG:root:Batch 299 compute time: 1.0724117755889893 secs
+DEBUG:root:Batch 299 update time: 0.1126701831817627 secs
+DEBUG:root:Batch 299 update metric time 0.002672433853149414 secs
+DEBUG:root:Batch 299 prepare time 0.0005621910095214844 secs
+DEBUG:root:End Batch callbacks time 8.511543273925781e-05 secs
+DEBUG:root:Batch 300 compute time: 1.0902233123779297 secs
+DEBUG:root:Batch 300 update time: 0.10474944114685059 secs
+DEBUG:root:Batch 300 update metric time 0.0025064945220947266 secs
+DEBUG:root:Batch 300 prepare time 0.000629425048828125 secs
+INFO:root:Epoch[0] Batch [280-300]	Speed: 105.95 samples/sec	accuracy=0.523828
+DEBUG:root:End Batch callbacks time 0.00032401084899902344 secs
+DEBUG:root:Batch 301 compute time: 1.0879924297332764 secs
+DEBUG:root:Batch 301 update time: 0.11521100997924805 secs
+DEBUG:root:Batch 301 update metric time 0.00266265869140625 secs
+DEBUG:root:Batch 301 prepare time 0.0005581378936767578 secs
+DEBUG:root:End Batch callbacks time 9.036064147949219e-05 secs
+DEBUG:root:Batch 302 compute time: 1.0963408946990967 secs
+DEBUG:root:Batch 302 update time: 0.12200021743774414 secs
+DEBUG:root:Batch 302 update metric time 0.0025238990783691406 secs
+DEBUG:root:Batch 302 prepare time 0.0005495548248291016 secs
+DEBUG:root:End Batch callbacks time 8.416175842285156e-05 secs
+DEBUG:root:Batch 303 compute time: 1.0691781044006348 secs
+DEBUG:root:Batch 303 update time: 0.1074213981628418 secs
+DEBUG:root:Batch 303 update metric time 0.0026595592498779297 secs
+DEBUG:root:Batch 303 prepare time 0.0005719661712646484 secs
+DEBUG:root:End Batch callbacks time 9.465217590332031e-05 secs
+DEBUG:root:Batch 304 compute time: 1.0668001174926758 secs
+DEBUG:root:Batch 304 update time: 0.11580348014831543 secs
+DEBUG:root:Batch 304 update metric time 0.005603313446044922 secs
+DEBUG:root:Batch 304 prepare time 0.0009434223175048828 secs
+DEBUG:root:End Batch callbacks time 0.00016045570373535156 secs
+DEBUG:root:Batch 305 compute time: 1.090200424194336 secs
+DEBUG:root:Batch 305 update time: 0.11109566688537598 secs
+DEBUG:root:Batch 305 update metric time 0.0026040077209472656 secs
+DEBUG:root:Batch 305 prepare time 0.0004227161407470703 secs
+DEBUG:root:End Batch callbacks time 9.322166442871094e-05 secs
+DEBUG:root:Batch 306 compute time: 1.0964829921722412 secs
+DEBUG:root:Batch 306 update time: 0.11068844795227051 secs
+DEBUG:root:Batch 306 update metric time 0.0035762786865234375 secs
+DEBUG:root:Batch 306 prepare time 0.0006139278411865234 secs
+DEBUG:root:End Batch callbacks time 8.96453857421875e-05 secs
+DEBUG:root:Batch 307 compute time: 1.0911219120025635 secs
+DEBUG:root:Batch 307 update time: 0.11061787605285645 secs
+DEBUG:root:Batch 307 update metric time 0.003665924072265625 secs
+DEBUG:root:Batch 307 prepare time 0.0008080005645751953 secs
+DEBUG:root:End Batch callbacks time 8.845329284667969e-05 secs
+DEBUG:root:Batch 308 compute time: 1.077820062637329 secs
+DEBUG:root:Batch 308 update time: 0.12233471870422363 secs
+DEBUG:root:Batch 308 update metric time 0.0025434494018554688 secs
+DEBUG:root:Batch 308 prepare time 0.0005464553833007812 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 309 compute time: 1.082486629486084 secs
+DEBUG:root:Batch 309 update time: 0.11260056495666504 secs
+DEBUG:root:Batch 309 update metric time 0.007962226867675781 secs
+DEBUG:root:Batch 309 prepare time 0.0012631416320800781 secs
+DEBUG:root:End Batch callbacks time 8.869171142578125e-05 secs
+DEBUG:root:Batch 310 compute time: 1.1039540767669678 secs
+DEBUG:root:Batch 310 update time: 0.11510920524597168 secs
+DEBUG:root:Batch 310 update metric time 0.0025153160095214844 secs
+DEBUG:root:Batch 310 prepare time 0.0005557537078857422 secs
+DEBUG:root:End Batch callbacks time 8.440017700195312e-05 secs
+DEBUG:root:Batch 311 compute time: 1.0701663494110107 secs
+DEBUG:root:Batch 311 update time: 0.10961413383483887 secs
+DEBUG:root:Batch 311 update metric time 0.0025141239166259766 secs
+DEBUG:root:Batch 311 prepare time 0.0006632804870605469 secs
+DEBUG:root:End Batch callbacks time 0.00010371208190917969 secs
+DEBUG:root:Batch 312 compute time: 1.0963621139526367 secs
+DEBUG:root:Batch 312 update time: 0.11688232421875 secs
+DEBUG:root:Batch 312 update metric time 0.0021390914916992188 secs
+DEBUG:root:Batch 312 prepare time 0.0004451274871826172 secs
+DEBUG:root:End Batch callbacks time 0.00015974044799804688 secs
+DEBUG:root:Batch 313 compute time: 1.084169626235962 secs
+DEBUG:root:Batch 313 update time: 0.11032986640930176 secs
+DEBUG:root:Batch 313 update metric time 0.002698183059692383 secs
+DEBUG:root:Batch 313 prepare time 0.0005671977996826172 secs
+DEBUG:root:End Batch callbacks time 8.559226989746094e-05 secs
+DEBUG:root:Batch 314 compute time: 1.07362961769104 secs
+DEBUG:root:Batch 314 update time: 0.11510586738586426 secs
+DEBUG:root:Batch 314 update metric time 0.0027816295623779297 secs
+DEBUG:root:Batch 314 prepare time 0.0007307529449462891 secs
+DEBUG:root:End Batch callbacks time 8.916854858398438e-05 secs
+DEBUG:root:Batch 315 compute time: 1.082805871963501 secs
+DEBUG:root:Batch 315 update time: 0.11214494705200195 secs
+DEBUG:root:Batch 315 update metric time 0.0025942325592041016 secs
+DEBUG:root:Batch 315 prepare time 0.0005512237548828125 secs
+DEBUG:root:End Batch callbacks time 8.630752563476562e-05 secs
+DEBUG:root:Batch 316 compute time: 1.017237663269043 secs
+DEBUG:root:Batch 316 update time: 0.10874032974243164 secs
+DEBUG:root:Batch 316 update metric time 0.0020322799682617188 secs
+DEBUG:root:Batch 316 prepare time 0.0004100799560546875 secs
+DEBUG:root:End Batch callbacks time 0.00011610984802246094 secs
+DEBUG:root:Batch 317 compute time: 1.0281963348388672 secs
+DEBUG:root:Batch 317 update time: 0.10569620132446289 secs
+DEBUG:root:Batch 317 update metric time 0.0031998157501220703 secs
+DEBUG:root:Batch 317 prepare time 0.0005388259887695312 secs
+DEBUG:root:End Batch callbacks time 0.00010013580322265625 secs
+DEBUG:root:Batch 318 compute time: 1.0674574375152588 secs
+DEBUG:root:Batch 318 update time: 0.11838698387145996 secs
+DEBUG:root:Batch 318 update metric time 0.0026865005493164062 secs
+DEBUG:root:Batch 318 prepare time 0.0007169246673583984 secs
+DEBUG:root:End Batch callbacks time 0.0001049041748046875 secs
+DEBUG:root:Batch 319 compute time: 1.0579185485839844 secs
+DEBUG:root:Batch 319 update time: 0.1148674488067627 secs
+DEBUG:root:Batch 319 update metric time 0.003226041793823242 secs
+DEBUG:root:Batch 319 prepare time 0.00034117698669433594 secs
+DEBUG:root:End Batch callbacks time 9.202957153320312e-05 secs
+DEBUG:root:Batch 320 compute time: 1.0365560054779053 secs
+DEBUG:root:Batch 320 update time: 0.10896110534667969 secs
+DEBUG:root:Batch 320 update metric time 0.003228902816772461 secs
+DEBUG:root:Batch 320 prepare time 0.0005910396575927734 secs
+INFO:root:Epoch[0] Batch [300-320]	Speed: 107.15 samples/sec	accuracy=0.523047
+DEBUG:root:End Batch callbacks time 0.00036644935607910156 secs
+DEBUG:root:Batch 321 compute time: 1.0341196060180664 secs
+DEBUG:root:Batch 321 update time: 0.1201333999633789 secs
+DEBUG:root:Batch 321 update metric time 0.002137422561645508 secs
+DEBUG:root:Batch 321 prepare time 0.0005011558532714844 secs
+DEBUG:root:End Batch callbacks time 9.465217590332031e-05 secs
+DEBUG:root:Batch 322 compute time: 1.0589344501495361 secs
+DEBUG:root:Batch 322 update time: 0.11779403686523438 secs
+DEBUG:root:Batch 322 update metric time 0.0019464492797851562 secs
+DEBUG:root:Batch 322 prepare time 0.0005261898040771484 secs
+DEBUG:root:End Batch callbacks time 9.632110595703125e-05 secs
+DEBUG:root:Batch 323 compute time: 1.040273904800415 secs
+DEBUG:root:Batch 323 update time: 0.12549233436584473 secs
+DEBUG:root:Batch 323 update metric time 0.002237081527709961 secs
+DEBUG:root:Batch 323 prepare time 0.00048613548278808594 secs
+DEBUG:root:End Batch callbacks time 9.417533874511719e-05 secs
+DEBUG:root:Batch 324 compute time: 1.069401502609253 secs
+DEBUG:root:Batch 324 update time: 0.12592625617980957 secs
+DEBUG:root:Batch 324 update metric time 0.0025327205657958984 secs
+DEBUG:root:Batch 324 prepare time 0.0005445480346679688 secs
+DEBUG:root:End Batch callbacks time 9.822845458984375e-05 secs
+DEBUG:root:Batch 325 compute time: 1.0497260093688965 secs
+DEBUG:root:Batch 325 update time: 0.11678361892700195 secs
+DEBUG:root:Batch 325 update metric time 0.0024406909942626953 secs
+DEBUG:root:Batch 325 prepare time 0.0005664825439453125 secs
+DEBUG:root:End Batch callbacks time 9.918212890625e-05 secs
+DEBUG:root:Batch 326 compute time: 1.0553724765777588 secs
+DEBUG:root:Batch 326 update time: 0.12250065803527832 secs
+DEBUG:root:Batch 326 update metric time 0.0022678375244140625 secs
+DEBUG:root:Batch 326 prepare time 0.0005388259887695312 secs
+DEBUG:root:End Batch callbacks time 9.632110595703125e-05 secs
+DEBUG:root:Batch 327 compute time: 1.0575881004333496 secs
+DEBUG:root:Batch 327 update time: 0.1142585277557373 secs
+DEBUG:root:Batch 327 update metric time 0.0023164749145507812 secs
+DEBUG:root:Batch 327 prepare time 0.0006749629974365234 secs
+DEBUG:root:End Batch callbacks time 9.918212890625e-05 secs
+DEBUG:root:Batch 328 compute time: 1.0536630153656006 secs
+DEBUG:root:Batch 328 update time: 0.13253211975097656 secs
+DEBUG:root:Batch 328 update metric time 0.0024390220642089844 secs
+DEBUG:root:Batch 328 prepare time 0.0005977153778076172 secs
+DEBUG:root:End Batch callbacks time 0.00011658668518066406 secs
+DEBUG:root:Batch 329 compute time: 1.049431562423706 secs
+DEBUG:root:Batch 329 update time: 0.12032270431518555 secs
+DEBUG:root:Batch 329 update metric time 0.0024290084838867188 secs
+DEBUG:root:Batch 329 prepare time 0.0005362033843994141 secs
+DEBUG:root:End Batch callbacks time 0.00011563301086425781 secs
+DEBUG:root:Batch 330 compute time: 1.047905445098877 secs
+DEBUG:root:Batch 330 update time: 0.11881899833679199 secs
+DEBUG:root:Batch 330 update metric time 0.002599477767944336 secs
+DEBUG:root:Batch 330 prepare time 0.00061798095703125 secs
+DEBUG:root:End Batch callbacks time 0.00011396408081054688 secs
+DEBUG:root:Batch 331 compute time: 1.0369887351989746 secs
+DEBUG:root:Batch 331 update time: 0.1239004135131836 secs
+DEBUG:root:Batch 331 update metric time 0.002164602279663086 secs
+DEBUG:root:Batch 331 prepare time 0.00047779083251953125 secs
+DEBUG:root:End Batch callbacks time 8.678436279296875e-05 secs
+DEBUG:root:Batch 332 compute time: 1.0596909523010254 secs
+DEBUG:root:Batch 332 update time: 0.10438394546508789 secs
+DEBUG:root:Batch 332 update metric time 0.0026967525482177734 secs
+DEBUG:root:Batch 332 prepare time 0.00046944618225097656 secs
+DEBUG:root:End Batch callbacks time 8.821487426757812e-05 secs
+DEBUG:root:Batch 333 compute time: 1.0703024864196777 secs
+DEBUG:root:Batch 333 update time: 0.12374281883239746 secs
+DEBUG:root:Batch 333 update metric time 0.0025420188903808594 secs
+DEBUG:root:Batch 333 prepare time 0.00047898292541503906 secs
+DEBUG:root:End Batch callbacks time 8.20159912109375e-05 secs
+DEBUG:root:Batch 334 compute time: 1.0575575828552246 secs
+DEBUG:root:Batch 334 update time: 0.10792064666748047 secs
+DEBUG:root:Batch 334 update metric time 0.0023279190063476562 secs
+DEBUG:root:Batch 334 prepare time 0.0005528926849365234 secs
+DEBUG:root:End Batch callbacks time 9.036064147949219e-05 secs
+DEBUG:root:Batch 335 compute time: 1.0501649379730225 secs
+DEBUG:root:Batch 335 update time: 0.11049890518188477 secs
+DEBUG:root:Batch 335 update metric time 0.008691549301147461 secs
+DEBUG:root:Batch 335 prepare time 0.0004532337188720703 secs
+DEBUG:root:End Batch callbacks time 8.463859558105469e-05 secs
+DEBUG:root:Batch 336 compute time: 1.0501501560211182 secs
+DEBUG:root:Batch 336 update time: 0.1073613166809082 secs
+DEBUG:root:Batch 336 update metric time 0.0024595260620117188 secs
+DEBUG:root:Batch 336 prepare time 0.0007014274597167969 secs
+DEBUG:root:End Batch callbacks time 9.036064147949219e-05 secs
+DEBUG:root:Batch 337 compute time: 1.0276782512664795 secs
+DEBUG:root:Batch 337 update time: 0.11248254776000977 secs
+DEBUG:root:Batch 337 update metric time 0.002467632293701172 secs
+DEBUG:root:Batch 337 prepare time 0.0004355907440185547 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 338 compute time: 1.0541651248931885 secs
+DEBUG:root:Batch 338 update time: 0.10761785507202148 secs
+DEBUG:root:Batch 338 update metric time 0.0024344921112060547 secs
+DEBUG:root:Batch 338 prepare time 0.0004603862762451172 secs
+DEBUG:root:End Batch callbacks time 8.821487426757812e-05 secs
+DEBUG:root:Batch 339 compute time: 1.0265064239501953 secs
+DEBUG:root:Batch 339 update time: 0.12227320671081543 secs
+DEBUG:root:Batch 339 update metric time 0.0022172927856445312 secs
+DEBUG:root:Batch 339 prepare time 0.0004239082336425781 secs
+DEBUG:root:End Batch callbacks time 8.416175842285156e-05 secs
+DEBUG:root:Batch 340 compute time: 1.076890468597412 secs
+DEBUG:root:Batch 340 update time: 0.11505675315856934 secs
+DEBUG:root:Batch 340 update metric time 0.0026102066040039062 secs
+DEBUG:root:Batch 340 prepare time 0.0005784034729003906 secs
+INFO:root:Epoch[0] Batch [320-340]	Speed: 108.88 samples/sec	accuracy=0.532813
+DEBUG:root:End Batch callbacks time 0.00032019615173339844 secs
+DEBUG:root:Batch 341 compute time: 1.056964635848999 secs
+DEBUG:root:Batch 341 update time: 0.10627961158752441 secs
+DEBUG:root:Batch 341 update metric time 0.0026760101318359375 secs
+DEBUG:root:Batch 341 prepare time 0.0005631446838378906 secs
+DEBUG:root:End Batch callbacks time 9.179115295410156e-05 secs
+DEBUG:root:Batch 342 compute time: 1.058180809020996 secs
+DEBUG:root:Batch 342 update time: 0.1176903247833252 secs
+DEBUG:root:Batch 342 update metric time 0.002577066421508789 secs
+DEBUG:root:Batch 342 prepare time 0.0005972385406494141 secs
+DEBUG:root:End Batch callbacks time 8.678436279296875e-05 secs
+DEBUG:root:Batch 343 compute time: 1.0367984771728516 secs
+DEBUG:root:Batch 343 update time: 0.12268376350402832 secs
+DEBUG:root:Batch 343 update metric time 0.002593994140625 secs
+DEBUG:root:Batch 343 prepare time 0.0005245208740234375 secs
+DEBUG:root:End Batch callbacks time 8.296966552734375e-05 secs
+DEBUG:root:Batch 344 compute time: 1.0448112487792969 secs
+DEBUG:root:Batch 344 update time: 0.1210784912109375 secs
+DEBUG:root:Batch 344 update metric time 0.0025358200073242188 secs
+DEBUG:root:Batch 344 prepare time 0.00045800209045410156 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 345 compute time: 1.0526916980743408 secs
+DEBUG:root:Batch 345 update time: 0.11128759384155273 secs
+DEBUG:root:Batch 345 update metric time 0.0028617382049560547 secs
+DEBUG:root:Batch 345 prepare time 0.0005648136138916016 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 346 compute time: 1.0589354038238525 secs
+DEBUG:root:Batch 346 update time: 0.10576438903808594 secs
+DEBUG:root:Batch 346 update metric time 0.0028829574584960938 secs
+DEBUG:root:Batch 346 prepare time 0.0010609626770019531 secs
+DEBUG:root:End Batch callbacks time 0.00021719932556152344 secs
+DEBUG:root:Batch 347 compute time: 1.0512902736663818 secs
+DEBUG:root:Batch 347 update time: 0.1126854419708252 secs
+DEBUG:root:Batch 347 update metric time 0.0025289058685302734 secs
+DEBUG:root:Batch 347 prepare time 0.0005702972412109375 secs
+DEBUG:root:End Batch callbacks time 8.559226989746094e-05 secs
+DEBUG:root:Batch 348 compute time: 1.0545628070831299 secs
+DEBUG:root:Batch 348 update time: 0.10643386840820312 secs
+DEBUG:root:Batch 348 update metric time 0.0024039745330810547 secs
+DEBUG:root:Batch 348 prepare time 0.0005033016204833984 secs
+DEBUG:root:End Batch callbacks time 8.869171142578125e-05 secs
+DEBUG:root:Batch 349 compute time: 1.06276535987854 secs
+DEBUG:root:Batch 349 update time: 0.1167898178100586 secs
+DEBUG:root:Batch 349 update metric time 0.002653837203979492 secs
+DEBUG:root:Batch 349 prepare time 0.0004296302795410156 secs
+DEBUG:root:End Batch callbacks time 8.58306884765625e-05 secs
+DEBUG:root:Batch 350 compute time: 1.0521557331085205 secs
+DEBUG:root:Batch 350 update time: 0.11107563972473145 secs
+DEBUG:root:Batch 350 update metric time 0.002338886260986328 secs
+DEBUG:root:Batch 350 prepare time 0.0005700588226318359 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 351 compute time: 1.0605669021606445 secs
+DEBUG:root:Batch 351 update time: 0.1112203598022461 secs
+DEBUG:root:Batch 351 update metric time 0.0024650096893310547 secs
+DEBUG:root:Batch 351 prepare time 0.0006000995635986328 secs
+DEBUG:root:End Batch callbacks time 8.153915405273438e-05 secs
+DEBUG:root:Batch 352 compute time: 1.0510923862457275 secs
+DEBUG:root:Batch 352 update time: 0.10398626327514648 secs
+DEBUG:root:Batch 352 update metric time 0.002645254135131836 secs
+DEBUG:root:Batch 352 prepare time 0.0006039142608642578 secs
+DEBUG:root:End Batch callbacks time 0.00016164779663085938 secs
+DEBUG:root:Batch 353 compute time: 1.055109977722168 secs
+DEBUG:root:Batch 353 update time: 0.11065220832824707 secs
+DEBUG:root:Batch 353 update metric time 0.0021791458129882812 secs
+DEBUG:root:Batch 353 prepare time 0.0007326602935791016 secs
+DEBUG:root:End Batch callbacks time 9.608268737792969e-05 secs
+DEBUG:root:Batch 354 compute time: 1.038954734802246 secs
+DEBUG:root:Batch 354 update time: 0.11894035339355469 secs
+DEBUG:root:Batch 354 update metric time 0.0024259090423583984 secs
+DEBUG:root:Batch 354 prepare time 0.0007169246673583984 secs
+DEBUG:root:End Batch callbacks time 9.799003601074219e-05 secs
+DEBUG:root:Batch 355 compute time: 1.0518202781677246 secs
+DEBUG:root:Batch 355 update time: 0.10976099967956543 secs
+DEBUG:root:Batch 355 update metric time 0.002767801284790039 secs
+DEBUG:root:Batch 355 prepare time 0.0005676746368408203 secs
+DEBUG:root:End Batch callbacks time 9.465217590332031e-05 secs
+DEBUG:root:Batch 356 compute time: 1.0563647747039795 secs
+DEBUG:root:Batch 356 update time: 0.12717866897583008 secs
+DEBUG:root:Batch 356 update metric time 0.002874135971069336 secs
+DEBUG:root:Batch 356 prepare time 0.0007228851318359375 secs
+DEBUG:root:End Batch callbacks time 9.870529174804688e-05 secs
+DEBUG:root:Batch 357 compute time: 1.0617709159851074 secs
+DEBUG:root:Batch 357 update time: 0.1148366928100586 secs
+DEBUG:root:Batch 357 update metric time 0.0023992061614990234 secs
+DEBUG:root:Batch 357 prepare time 0.0006210803985595703 secs
+DEBUG:root:End Batch callbacks time 9.965896606445312e-05 secs
+DEBUG:root:Batch 358 compute time: 1.052361249923706 secs
+DEBUG:root:Batch 358 update time: 0.11721491813659668 secs
+DEBUG:root:Batch 358 update metric time 0.0025353431701660156 secs
+DEBUG:root:Batch 358 prepare time 0.0005042552947998047 secs
+DEBUG:root:End Batch callbacks time 9.822845458984375e-05 secs
+DEBUG:root:Batch 359 compute time: 1.067864179611206 secs
+DEBUG:root:Batch 359 update time: 0.11612081527709961 secs
+DEBUG:root:Batch 359 update metric time 0.0024123191833496094 secs
+DEBUG:root:Batch 359 prepare time 0.0006732940673828125 secs
+DEBUG:root:End Batch callbacks time 0.0001251697540283203 secs
+DEBUG:root:Batch 360 compute time: 1.0774922370910645 secs
+DEBUG:root:Batch 360 update time: 0.10799050331115723 secs
+DEBUG:root:Batch 360 update metric time 0.0024356842041015625 secs
+DEBUG:root:Batch 360 prepare time 0.0005543231964111328 secs
+INFO:root:Epoch[0] Batch [340-360]	Speed: 108.91 samples/sec	accuracy=0.522656
+DEBUG:root:End Batch callbacks time 0.00033354759216308594 secs
+DEBUG:root:Batch 361 compute time: 1.063812017440796 secs
+DEBUG:root:Batch 361 update time: 0.11394619941711426 secs
+DEBUG:root:Batch 361 update metric time 0.0026035308837890625 secs
+DEBUG:root:Batch 361 prepare time 0.0005106925964355469 secs
+DEBUG:root:End Batch callbacks time 9.417533874511719e-05 secs
+DEBUG:root:Batch 362 compute time: 1.0299694538116455 secs
+DEBUG:root:Batch 362 update time: 0.11324715614318848 secs
+DEBUG:root:Batch 362 update metric time 0.0023620128631591797 secs
+DEBUG:root:Batch 362 prepare time 0.0006220340728759766 secs
+DEBUG:root:End Batch callbacks time 9.5367431640625e-05 secs
+DEBUG:root:Batch 363 compute time: 1.0430347919464111 secs
+DEBUG:root:Batch 363 update time: 0.11118412017822266 secs
+DEBUG:root:Batch 363 update metric time 0.0026929378509521484 secs
+DEBUG:root:Batch 363 prepare time 0.0003418922424316406 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 364 compute time: 1.0656993389129639 secs
+DEBUG:root:Batch 364 update time: 0.10869717597961426 secs
+DEBUG:root:Batch 364 update metric time 0.0026929378509521484 secs
+DEBUG:root:Batch 364 prepare time 0.0005619525909423828 secs
+DEBUG:root:End Batch callbacks time 8.535385131835938e-05 secs
+DEBUG:root:Batch 365 compute time: 1.0708200931549072 secs
+DEBUG:root:Batch 365 update time: 0.1165163516998291 secs
+DEBUG:root:Batch 365 update metric time 0.002567291259765625 secs
+DEBUG:root:Batch 365 prepare time 0.0005745887756347656 secs
+DEBUG:root:End Batch callbacks time 0.0001628398895263672 secs
+DEBUG:root:Batch 366 compute time: 1.0547823905944824 secs
+DEBUG:root:Batch 366 update time: 0.10227608680725098 secs
+DEBUG:root:Batch 366 update metric time 0.0024862289428710938 secs
+DEBUG:root:Batch 366 prepare time 0.000568389892578125 secs
+DEBUG:root:End Batch callbacks time 8.654594421386719e-05 secs
+DEBUG:root:Batch 367 compute time: 1.060549259185791 secs
+DEBUG:root:Batch 367 update time: 0.10089612007141113 secs
+DEBUG:root:Batch 367 update metric time 0.002748250961303711 secs
+DEBUG:root:Batch 367 prepare time 0.0005528926849365234 secs
+DEBUG:root:End Batch callbacks time 8.7738037109375e-05 secs
+DEBUG:root:Batch 368 compute time: 1.0548880100250244 secs
+DEBUG:root:Batch 368 update time: 0.09914064407348633 secs
+DEBUG:root:Batch 368 update metric time 0.002658367156982422 secs
+DEBUG:root:Batch 368 prepare time 0.0005290508270263672 secs
+DEBUG:root:End Batch callbacks time 9.036064147949219e-05 secs
+DEBUG:root:Batch 369 compute time: 1.0713136196136475 secs
+DEBUG:root:Batch 369 update time: 0.1035459041595459 secs
+DEBUG:root:Batch 369 update metric time 0.002460002899169922 secs
+DEBUG:root:Batch 369 prepare time 0.0005052089691162109 secs
+DEBUG:root:End Batch callbacks time 8.988380432128906e-05 secs
+DEBUG:root:Batch 370 compute time: 1.0596213340759277 secs
+DEBUG:root:Batch 370 update time: 0.11395931243896484 secs
+DEBUG:root:Batch 370 update metric time 0.002430438995361328 secs
+DEBUG:root:Batch 370 prepare time 0.00048279762268066406 secs
+DEBUG:root:End Batch callbacks time 8.845329284667969e-05 secs
+DEBUG:root:Batch 371 compute time: 1.045790433883667 secs
+DEBUG:root:Batch 371 update time: 0.12513041496276855 secs
+DEBUG:root:Batch 371 update metric time 0.002207517623901367 secs
+DEBUG:root:Batch 371 prepare time 0.00046515464782714844 secs
+DEBUG:root:End Batch callbacks time 9.107589721679688e-05 secs
+DEBUG:root:Batch 372 compute time: 1.0677220821380615 secs
+DEBUG:root:Batch 372 update time: 0.11069989204406738 secs
+DEBUG:root:Batch 372 update metric time 0.0026810169219970703 secs
+DEBUG:root:Batch 372 prepare time 0.0006306171417236328 secs
+DEBUG:root:End Batch callbacks time 9.083747863769531e-05 secs
+DEBUG:root:Batch 373 compute time: 1.0637543201446533 secs
+DEBUG:root:Batch 373 update time: 0.11541080474853516 secs
+DEBUG:root:Batch 373 update metric time 0.0026230812072753906 secs
+DEBUG:root:Batch 373 prepare time 0.0005285739898681641 secs
+DEBUG:root:End Batch callbacks time 8.845329284667969e-05 secs
+DEBUG:root:Batch 374 compute time: 1.0537850856781006 secs
+DEBUG:root:Batch 374 update time: 0.10638833045959473 secs
+DEBUG:root:Batch 374 update metric time 0.002694368362426758 secs
+DEBUG:root:Batch 374 prepare time 0.0005807876586914062 secs
+DEBUG:root:End Batch callbacks time 8.893013000488281e-05 secs
+DEBUG:root:Batch 375 compute time: 1.0592129230499268 secs
+DEBUG:root:Batch 375 update time: 0.11671233177185059 secs
+DEBUG:root:Batch 375 update metric time 0.0028340816497802734 secs
+DEBUG:root:Batch 375 prepare time 0.0005490779876708984 secs
+DEBUG:root:End Batch callbacks time 8.344650268554688e-05 secs
+DEBUG:root:Batch 376 compute time: 1.0173449516296387 secs
+DEBUG:root:Batch 376 update time: 0.12893366813659668 secs
+DEBUG:root:Batch 376 update metric time 0.0023643970489501953 secs
+DEBUG:root:Batch 376 prepare time 0.0004935264587402344 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 377 compute time: 1.037076711654663 secs
+DEBUG:root:Batch 377 update time: 0.11603188514709473 secs
+DEBUG:root:Batch 377 update metric time 0.002465963363647461 secs
+DEBUG:root:Batch 377 prepare time 0.0005202293395996094 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 378 compute time: 1.0555126667022705 secs
+DEBUG:root:Batch 378 update time: 0.11179709434509277 secs
+DEBUG:root:Batch 378 update metric time 0.0025734901428222656 secs
+DEBUG:root:Batch 378 prepare time 0.0003440380096435547 secs
+DEBUG:root:End Batch callbacks time 8.535385131835938e-05 secs
+DEBUG:root:Batch 379 compute time: 1.0466115474700928 secs
+DEBUG:root:Batch 379 update time: 0.11936402320861816 secs
+DEBUG:root:Batch 379 update metric time 0.002608776092529297 secs
+DEBUG:root:Batch 379 prepare time 0.00044798851013183594 secs
+DEBUG:root:End Batch callbacks time 8.535385131835938e-05 secs
+DEBUG:root:Batch 380 compute time: 1.031641960144043 secs
+DEBUG:root:Batch 380 update time: 0.12361788749694824 secs
+DEBUG:root:Batch 380 update metric time 0.0028846263885498047 secs
+DEBUG:root:Batch 380 prepare time 0.0006687641143798828 secs
+INFO:root:Epoch[0] Batch [360-380]	Speed: 109.22 samples/sec	accuracy=0.542969
+DEBUG:root:End Batch callbacks time 0.0003762245178222656 secs
+DEBUG:root:Batch 381 compute time: 1.0498628616333008 secs
+DEBUG:root:Batch 381 update time: 0.13336682319641113 secs
+DEBUG:root:Batch 381 update metric time 0.002511739730834961 secs
+DEBUG:root:Batch 381 prepare time 0.0005168914794921875 secs
+DEBUG:root:End Batch callbacks time 8.749961853027344e-05 secs
+DEBUG:root:Batch 382 compute time: 1.0100786685943604 secs
+DEBUG:root:Batch 382 update time: 0.13912415504455566 secs
+DEBUG:root:Batch 382 update metric time 0.002644062042236328 secs
+DEBUG:root:Batch 382 prepare time 0.0005588531494140625 secs
+DEBUG:root:End Batch callbacks time 8.296966552734375e-05 secs
+DEBUG:root:Batch 383 compute time: 1.0399219989776611 secs
+DEBUG:root:Batch 383 update time: 0.11003541946411133 secs
+DEBUG:root:Batch 383 update metric time 0.0024971961975097656 secs
+DEBUG:root:Batch 383 prepare time 0.0004990100860595703 secs
+DEBUG:root:End Batch callbacks time 8.368492126464844e-05 secs
+DEBUG:root:Batch 384 compute time: 1.0494730472564697 secs
+DEBUG:root:Batch 384 update time: 0.1113440990447998 secs
+DEBUG:root:Batch 384 update metric time 0.0025892257690429688 secs
+DEBUG:root:Batch 384 prepare time 0.0005109310150146484 secs
+DEBUG:root:End Batch callbacks time 8.225440979003906e-05 secs
+DEBUG:root:Batch 385 compute time: 1.0412623882293701 secs
+DEBUG:root:Batch 385 update time: 0.11067938804626465 secs
+DEBUG:root:Batch 385 update metric time 0.0026352405548095703 secs
+DEBUG:root:Batch 385 prepare time 0.0005896091461181641 secs
+DEBUG:root:End Batch callbacks time 8.702278137207031e-05 secs
+DEBUG:root:Batch 386 compute time: 1.0337059497833252 secs
+DEBUG:root:Batch 386 update time: 0.11595487594604492 secs
+DEBUG:root:Batch 386 update metric time 0.0025398731231689453 secs
+DEBUG:root:Batch 386 prepare time 0.0005998611450195312 secs
+DEBUG:root:End Batch callbacks time 8.606910705566406e-05 secs
+DEBUG:root:Batch 387 compute time: 1.0636048316955566 secs
+DEBUG:root:Batch 387 update time: 0.1094510555267334 secs
+DEBUG:root:Batch 387 update metric time 0.002485990524291992 secs
+DEBUG:root:Batch 387 prepare time 0.0005300045013427734 secs
+DEBUG:root:End Batch callbacks time 8.440017700195312e-05 secs
+DEBUG:root:Batch 388 compute time: 1.0380103588104248 secs
+DEBUG:root:Batch 388 update time: 0.11157798767089844 secs
+DEBUG:root:Batch 388 update metric time 0.002634763717651367 secs
+DEBUG:root:Batch 388 prepare time 0.0006358623504638672 secs
+DEBUG:root:End Batch callbacks time 8.344650268554688e-05 secs
+DEBUG:root:Batch 389 compute time: 1.067725419998169 secs
+DEBUG:root:Batch 389 update time: 0.10796117782592773 secs
+DEBUG:root:Batch 389 update metric time 0.0027930736541748047 secs
+DEBUG:root:Batch 389 prepare time 0.0005638599395751953 secs
+DEBUG:root:End Batch callbacks time 8.344650268554688e-05 secs
+DEBUG:root:Batch 390 compute time: 1.0854709148406982 secs
+DEBUG:root:Batch 390 update time: 0.10149478912353516 secs
+DEBUG:root:Batch 390 update metric time 0.00237274169921875 secs
+DEBUG:root:Batch 390 prepare time 0.00020575523376464844 secs
+DEBUG:root:End Batch callbacks time 0.00012183189392089844 secs
+INFO:root:Epoch[0] Train-accuracy=0.427629
+INFO:root:Epoch[0] Time cost=471.126
+INFO:root:Epoch 0 param sync time is 0.5718786716461182 secs
+INFO:root:Epoch[0] Validation-accuracy=0.481210

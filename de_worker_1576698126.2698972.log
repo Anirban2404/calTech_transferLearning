@@ -1,0 +1,4 @@
+DEBUG:root:Bind time 4.988014221191406 secs
+DEBUG:root:Init param time 0.12093329429626465 secs
+DEBUG:root:Init opt time 0.008741140365600586 secs
+DEBUG:root:Init metric time 0.0002529621124267578 secs
