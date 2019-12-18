@@ -1,0 +1,9 @@
+[I 17:06:29.564 NotebookApp] Serving notebooks from local directory: /root/calTech_transferLearning
+[I 17:06:29.564 NotebookApp] The Jupyter Notebook is running at:
+[I 17:06:29.564 NotebookApp] http://(isislab21 or 127.0.0.1):9999/
+[I 17:06:29.564 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 17:06:35.040 NotebookApp] 404 GET /api/kernels/da06245d-1906-4249-80c5-e300afb76ff0/channels?session_id=293541b971e843e886ceca962f2855b9 (10.66.66.119): Kernel does not exist: da06245d-1906-4249-80c5-e300afb76ff0
+[W 17:06:35.086 NotebookApp] 404 GET /api/kernels/da06245d-1906-4249-80c5-e300afb76ff0/channels?session_id=293541b971e843e886ceca962f2855b9 (10.66.66.119) 67.57ms referer=None
+[W 17:06:36.750 NotebookApp] 404 GET /notebooks/calTech_transferLearning/logAnalysis.ipynb (10.66.66.119): No such file or directory: calTech_transferLearning/logAnalysis.ipynb
+[W 17:06:36.751 NotebookApp] 404 GET /notebooks/calTech_transferLearning/logAnalysis.ipynb (10.66.66.119) 2.17ms referer=http://129.59.234.231:9999/tree/calTech_transferLearning
+[I 17:06:42.028 NotebookApp] 302 GET / (10.66.66.119) 0.66ms

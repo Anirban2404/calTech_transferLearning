@@ -1,0 +1,7 @@
+DEBUG:root:Bind time 0.123 secs
+DEBUG:root:Parameter Init time 0.089 secs
+DEBUG:root:Optimizer Init time 0.006 secs
+DEBUG:root:Metric Init time 0.000 secs
+DEBUG:root:Total Init Time 0.095 secs
+INFO:root:Epoch[0] Batch [0-10]	Speed: 3.00 samples/sec	accuracy=0.659091
+INFO:root:Epoch[0] Batch [10-20]	Speed: 3.16 samples/sec	accuracy=0.700000

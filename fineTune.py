@@ -32,6 +32,8 @@ def get_iterators(data_train, data_val, batch_size, data_shape=(3, 224, 224)):
 def fit(symbol, arg_params, aux_params, train, val, batch_size, num_gpus, num_epochs, kv_store):
     devs = [mx.gpu(i) for i in range(num_gpus)]
     #print(devs)
+    if num_gpus == 0:
+        devs = mx.cpu(0)
     mod = mx.mod.Module(symbol=sym, context=devs)
 
     ########
