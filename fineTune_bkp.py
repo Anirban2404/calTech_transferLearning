@@ -12,7 +12,7 @@ import mxnet as mx
 
 def get_iterators(batch_size, data_shape=(3, 224, 224)):
     train = mx.io.ImageRecordIter(
-        path_imgrec         = './caltech-256-10-train.rec',
+        path_imgrec         = './caltech-256-10-train1.rec',
         data_name           = 'data',
         label_name          = 'softmax_label',
         batch_size          = batch_size,
@@ -21,7 +21,7 @@ def get_iterators(batch_size, data_shape=(3, 224, 224)):
         rand_crop           = True,
         rand_mirror         = True)
     val = mx.io.ImageRecordIter(
-        path_imgrec         = './caltech-256-10-val.rec',
+        path_imgrec         = './caltech-256-10-val1.rec',
         data_name           = 'data',
         label_name          = 'softmax_label',
         batch_size          = batch_size,
@@ -63,14 +63,14 @@ def fit(symbol, arg_params, aux_params, train, val, batch_size, num_gpus):
     tic = time.time()
     print("Saving Model..")
     # save model
-    checkpoint = mx.callback.do_checkpoint('resnet-50', period=1)
+    checkpoint = mx.callback.do_checkpoint('calTech-resnet-18', period=1)
     toc = time.time()
     print("Model Saving Time: ", toc - tic, " seconds")
     #######
 
     mod.fit(train, 
         eval_data=val,
-        num_epoch=1,
+        num_epoch=20,
         arg_params=arg_params,
         aux_params=aux_params,
         allow_missing=True,
@@ -95,13 +95,15 @@ num_gpus = 1
 batch_size = batch_per_gpu * num_gpus
 
 import time
-#get_model('http://data.mxnet.io/models/imagenet/resnet/50-layers/resnet-50', 0)
+get_model('http://data.mxnet.io/models/imagenet/resnet/50-layers/resnet-50', 0)
+get_model('http://data.mxnet.io/models/imagenet/resnet/34-layers/resnet-34', 0)
+get_model('http://data.mxnet.io/models/imagenet/resnet/18-layers/resnet-18', 0)
+get_model('http://data.mxnet.io/models/imagenet/inception-bn/Inception-BN', 126)
+
 tic = time.time()
-sym, arg_params, aux_params = mx.model.load_checkpoint('resnet-50', 5)
+sym, arg_params, aux_params = mx.model.load_checkpoint('resnet-18', 0)
 toc = time.time()
-print("resnet-50 loading time: ", toc-tic, " seconds")
-#get_model('http://data.mxnet.io/models/imagenet-1k/resnet-152/resnet-152', 0)
-#sym, arg_params, aux_params = mx.model.load_checkpoint('resnet-152', 0)
+print("resnet-18 model loading time: ", toc-tic, " seconds")
 
 (new_sym, new_args) = get_fine_tune_model(sym, arg_params, num_classes)
 (train, val) = get_iterators(batch_size)

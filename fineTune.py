@@ -40,7 +40,7 @@ def fit(symbol, arg_params, aux_params, train, val, batch_size, num_gpus, num_ep
     tic = time.time()
     print("Saving Model..")
     # save model
-    checkpoint = mx.callback.do_checkpoint('cal_Tech-resnet-50', period=1)
+    checkpoint = mx.callback.do_checkpoint('cal_Tech-inception', period=1)
     toc = time.time()
     print("Model Saving Time: ", toc - tic, " seconds")
     #######
